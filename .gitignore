@@ -26,3 +26,12 @@
 *.exe
 *.out
 *.app
+
+#logs
+*.tlog
+
+FYDP/Debug/*
+FYDP/FYDP/Debug/*
+*.suo
+*.db
+*.opendb
