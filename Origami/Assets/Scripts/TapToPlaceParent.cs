@@ -16,10 +16,10 @@ public class TapToPlaceParent : MonoBehaviour
             SpatialMapping.Instance.DrawVisualMeshes = true;
         }
         // If the user is not in placing mode, hide the spatial mapping mesh.
-        else
-        {
-            SpatialMapping.Instance.DrawVisualMeshes = false;
-        }
+        //else
+      //  {
+    //        SpatialMapping.Instance.DrawVisualMeshes = false;
+    //    }
     }
 
     // Update is called once per frame
