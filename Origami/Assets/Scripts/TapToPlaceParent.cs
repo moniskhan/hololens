@@ -3,7 +3,7 @@
 public class TapToPlaceParent : MonoBehaviour
 {
     bool placing = false;
-
+    float minDepressionAngle = 30;
     // Called by GazeGestureManager when the user performs a Select gesture
     void OnSelect()
     {
@@ -33,7 +33,15 @@ public class TapToPlaceParent : MonoBehaviour
             // Do a raycast into the world that will only hit the Spatial Mapping mesh.
             var headPosition = Camera.main.transform.position;
             var gazeDirection = Camera.main.transform.forward;
-
+            Vector3 horizontalDirection = new Vector3(gazeDirection.x, 0, gazeDirection.z);
+            float depressionAngle = Vector3.Angle(gazeDirection, horizontalDirection);
+            print(depressionAngle);
+            if(depressionAngle < minDepressionAngle)
+            {
+                float horizontalLength = horizontalDirection.magnitude;
+                float adjustedY = Mathf.Tan(minDepressionAngle/180*Mathf.PI) * horizontalLength;
+                gazeDirection.y = - adjustedY;
+            }
             RaycastHit hitInfo;
             if (Physics.Raycast(headPosition, gazeDirection, out hitInfo,
                 30.0f, SpatialMapping.PhysicsRaycastMask))
