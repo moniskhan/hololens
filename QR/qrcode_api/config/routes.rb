@@ -53,6 +53,7 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
   get '/qrcode', to: 'qrcode#show'
-  post '/qrcode', to: 'qrcode#upload'
+  post '/qrcode', to: 'qrcode#decode'
 end
