@@ -1,0 +1,8 @@
+c:\users\mak\documents\visual studio 2015\Projects\BasicCrud\BasicCrud\bin\Debug\BasicCrud.exe.config
+c:\users\mak\documents\visual studio 2015\Projects\BasicCrud\BasicCrud\bin\Debug\BasicCrud.exe
+c:\users\mak\documents\visual studio 2015\Projects\BasicCrud\BasicCrud\bin\Debug\BasicCrud.pdb
+c:\users\mak\documents\visual studio 2015\Projects\BasicCrud\BasicCrud\obj\Debug\BasicCrud.exe
+c:\users\mak\documents\visual studio 2015\Projects\BasicCrud\BasicCrud\obj\Debug\BasicCrud.pdb
+c:\users\mak\documents\visual studio 2015\Projects\BasicCrud\BasicCrud\obj\Debug\BasicCrud.csprojResolveAssemblyReference.cache
+c:\users\mak\documents\visual studio 2015\Projects\BasicCrud\BasicCrud\bin\Debug\Npgsql.dll
+c:\users\mak\documents\visual studio 2015\Projects\BasicCrud\BasicCrud\bin\Debug\Npgsql.xml
