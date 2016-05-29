@@ -60,9 +60,7 @@ public class ShowMenu : MonoBehaviour
     {
         if (Input.GetKeyDown("escape"))
         {
-            menu = transform.Find("Menu_Panel").gameObject;
-            isShowing = !isShowing;
-            menu.SetActive(isShowing);
+            ToggleMenu();
         }
     }
 }
