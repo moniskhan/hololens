@@ -6,3 +6,11 @@ c:\users\mak\documents\visual studio 2015\Projects\BasicCrud\BasicCrud\obj\Debug
 c:\users\mak\documents\visual studio 2015\Projects\BasicCrud\BasicCrud\obj\Debug\BasicCrud.csprojResolveAssemblyReference.cache
 c:\users\mak\documents\visual studio 2015\Projects\BasicCrud\BasicCrud\bin\Debug\Npgsql.dll
 c:\users\mak\documents\visual studio 2015\Projects\BasicCrud\BasicCrud\bin\Debug\Npgsql.xml
+c:\users\mak\documents\visual studio 2015\Projects\BasicCrud\BasicCrud\bin\Debug\EntityFramework.dll
+c:\users\mak\documents\visual studio 2015\Projects\BasicCrud\BasicCrud\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\mak\documents\visual studio 2015\Projects\BasicCrud\BasicCrud\bin\Debug\System.Data.SQLite.dll
+c:\users\mak\documents\visual studio 2015\Projects\BasicCrud\BasicCrud\bin\Debug\System.Data.SQLite.EF6.dll
+c:\users\mak\documents\visual studio 2015\Projects\BasicCrud\BasicCrud\bin\Debug\System.Data.SQLite.Linq.dll
+c:\users\mak\documents\visual studio 2015\Projects\BasicCrud\BasicCrud\bin\Debug\EntityFramework.xml
+c:\users\mak\documents\visual studio 2015\Projects\BasicCrud\BasicCrud\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\mak\documents\visual studio 2015\Projects\BasicCrud\BasicCrud\bin\Debug\System.Data.SQLite.xml

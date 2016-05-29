@@ -4,56 +4,140 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
-using Npgsql;
+using System.Data.SQLite;
 
 namespace BasicCrud
 {
     class Program
     {
-        static void Main(string[] args)
+        static void createDatabase()
         {
-            Console.WriteLine("Hello World.");
+            // Initializing database
+            SQLiteConnection.CreateFile("ModelRefDatabase.sqlite");
+        }
 
-            
-            DataSet ds = new DataSet();
-            DataTable dt = new DataTable();
-
+        static void uuidAutoIncrementTrigger(SQLiteConnection conn)
+        {
             try
             {
-                // PostgeSQL-style connection string
-                string connstring = "Server=127.0.0.1; Port=5433; User Id=postgres; Password=root; Database=postgres;";
-                // Making connection with Npgsql provider
-                NpgsqlConnection conn = new NpgsqlConnection(connstring);
-                conn.Open();
-                // sql statement
-                //string sql = "SELECT table_schema,table_name FROM information_schema.tables ORDER BY table_schema,table_name";
-                string sql1 = "CREATE TABLE crud_table (id UUID PRIMARY KEY,name varchar(40));";
-                string sql2 = "insert into crud_table values (uuid_generate_v4())";
-                string sql3 = "SELECT * FROM crud_table";
+                // Creating UUID Auto Gen Trigger
+                string sql = "CREATE TRIGGER AutoGenerateGUID" +
+                "AFTER INSERT ON crud_table" +
+                "FOR EACH ROW" +
+                "WHEN (NEW.id IS NULL)" +
+                "BEGIN" +
+                "   UPDATE crud_table SET id = (select hex( randomblob(4)) || '-' || hex( randomblob(2))" +
+                "             || '-' || '4' || substr( hex( randomblob(2)), 2) || '-'" +
+                "             || substr('AB89', 1 + (abs(random()) % 4) , 1)  ||" +
+                "             substr(hex(randomblob(2)), 2) || '-' || hex(randomblob(6)) ) WHERE rowid = NEW.rowid;" +
+                "END;";
 
-
-                // Define a query returning a single row result set
-                NpgsqlCommand command = new NpgsqlCommand(sql3, conn);
-
-                // Execute the query and obtain a result set
-                NpgsqlDataReader dr = command.ExecuteReader();
-
-                // Output rows
-                while (dr.Read())
-                    Console.Write("{0}\t{1} \n", dr[0], dr[1]);
-
-                conn.Close();
+                SQLiteCommand command = new SQLiteCommand(sql, conn);
+                command.ExecuteNonQuery();
             }
             catch (Exception msg)
             {
                 Console.WriteLine(msg.ToString());
             }
-            
-            
+
+        }
+
+        static void createTable(SQLiteConnection conn)
+        {
+            try
+            {
+                // Creating Table
+                string sql = "CREATE TABLE crud_table (id INTEGER PRIMARY KEY AUTOINCREMENT,link varchar(1000));";
+                SQLiteCommand command = new SQLiteCommand(sql, conn);
+                command.ExecuteNonQuery();
+            }
+            catch (Exception msg)
+            {
+                Console.WriteLine(msg.ToString());
+            }
+
+        }
+
+        static void deleteTable(SQLiteConnection conn)
+        {
+            try
+            {
+                string sql = "DROP TABLE crud_table;";
+                SQLiteCommand command = new SQLiteCommand(sql, conn);
+                command.ExecuteNonQuery();
+            }
+            catch (Exception msg)
+            {
+                Console.WriteLine(msg.ToString());
+            }
+
+        }
+
+        static void insertModel(SQLiteConnection conn)
+        {
+            try
+            {
+                // Inserting into DB
+                string sql = "insert into crud_table values (NULL, 'bob');";
+                SQLiteCommand command = new SQLiteCommand(sql, conn);
+                command.ExecuteNonQuery();
+            }
+            catch (Exception msg)
+            {
+                Console.WriteLine(msg.ToString());
+            }
+
+        }
+
+        static void getModels(SQLiteConnection conn)
+        {
+            try
+            {
+                // Reading from DB
+                string sql = "SELECT * FROM crud_table;";
+                SQLiteCommand command = new SQLiteCommand(sql, conn);
+
+                SQLiteDataReader reader = command.ExecuteReader();
+
+                printModels(reader);
+            }
+            catch (Exception msg)
+            {
+                Console.WriteLine(msg.ToString());
+            }
+        }
+
+        static void printModels(SQLiteDataReader reader)
+        {
+            while (reader.Read())
+                Console.WriteLine("Id: " + reader["id"] + "\t Link: " + reader["link"]);
+        }
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World.");
+
+            try
+            {
+                SQLiteConnection m_dbConnection;
+
+                m_dbConnection = new SQLiteConnection("Data Source=ModelRefDatabase.sqlite;Version=3;");
+                m_dbConnection.Open();
+
+                insertModel(m_dbConnection);
+
+                getModels(m_dbConnection);
+                m_dbConnection.Close();
+            }
+            catch (Exception msg)
+            {
+                Console.WriteLine(msg.ToString());
+            }
 
             // Keep the console window open in debug mode.
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
         }
+
     }
 }
