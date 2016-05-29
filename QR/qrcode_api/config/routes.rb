@@ -55,5 +55,8 @@ Rails.application.routes.draw do
   #   end
 
   get '/qrcode', to: 'qrcode#show'
-  post '/qrcode', to: 'qrcode#decode'
+
+  post '/qr/decode', to: 'qrcode#decode'
+  post '/qr/encode', to: 'qrcode#encode'
+
 end
