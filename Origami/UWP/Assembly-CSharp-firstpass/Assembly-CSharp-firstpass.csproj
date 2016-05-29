@@ -131,6 +131,10 @@
   </ItemGroup>
   <ItemGroup>
 
+    <Reference Include="Assembly-UnityScript">
+      <HintPath>$(SolutionDir)$(SolutionName)\Unprocessed\Assembly-UnityScript.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEngine">
       <HintPath>$(SolutionDir)$(SolutionName)\Unprocessed\UnityEngine.dll</HintPath>
       <Private>False</Private>

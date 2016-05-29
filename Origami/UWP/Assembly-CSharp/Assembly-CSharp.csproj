@@ -134,6 +134,10 @@
       <Project>{194d914d-0664-444e-b663-4d0f1c80af68}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
+    <Reference Include="Assembly-UnityScript">
+      <HintPath>$(SolutionDir)$(SolutionName)\Unprocessed\Assembly-UnityScript.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEngine">
       <HintPath>$(SolutionDir)$(SolutionName)\Unprocessed\UnityEngine.dll</HintPath>
       <Private>False</Private>

@@ -30,8 +30,8 @@
 #logs
 *.tlog
 
-FYDP/Debug/*
-FYDP/FYDP/Debug/*
+Origami/Library/*
 *.suo
 *.db
 *.opendb
+*.pdb

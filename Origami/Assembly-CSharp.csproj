@@ -52,6 +52,7 @@
      <Compile Include="Assets\Holograms\Support\Underworld\UnderworldReset.cs" />
      <Compile Include="Assets\Holograms\Support\Underworld\UnderworldSound.cs" />
      <Compile Include="Assets\Scripts\GazeGestureManager.cs" />
+     <Compile Include="Assets\Scripts\ShowMenu.cs" />
      <Compile Include="Assets\Scripts\SpeechManager.cs" />
      <Compile Include="Assets\Scripts\SphereCommands.cs" />
      <Compile Include="Assets\Scripts\TapToPlaceParent.cs" />
