@@ -1,0 +1,64 @@
+= ZXing
+
+Decode QR codes (and other 1D/2D barcode formats)
+
+QRcode[http://en.wikipedia.org/wiki/QR_Code] generation is well served in the
+Ruby community, but decoding seems to be stuck in the Java world. This is an
+attempt to bridge the gap by wrapping the
+ZXing[http://code.google.com/p/zxing/] library with JRuby. ZXing conveniently
+decodes a plethora of barcodes. Their site has a complete list.
+
+== Installation
+
+    gem install zxing
+
+== Requirements
+
+* JRuby (tested with 1.5.6), OR
+* MRI (1.8.7 and 1.9.2) with jruby-jars gem
+
+== Usage
+
+    require 'zxing'
+
+    # Pass a path to a file, and it will return the characters encoded within
+    # the barcode image.  For example, if a QRCode image has the text "QRcode
+    # string" embedded:
+    ZXing.decode '/Users/ecin/qrcode.png' #=> "QRcode string"
+
+    # ZXing#decode_all returns an array of encoded values.  For example if an
+    # image has a barcode encoded with the value "test123" and another barcode
+    # encoded with the value "test456":
+    ZXing.decode_all 'image_with_multiple_barcodes.png' #=> ["test456", "test123"]
+
+    # You can also decode a URL...
+    ZXing.decode 'http://2d-code.co.uk/images/bbc-logo-in-qr-code.gif'
+
+    # or an instance of File
+    ZXing.decode File.new('qrcode.png')
+
+    # or anything that returns a URL or file path when #path is called on it.
+    class Image
+      attr_reader :path
+      def initialize(path); @path = path end
+    end
+
+
+    # ZXing#decode returns nil if it can't decode the image.
+    ZXing.decode 'image_without_a_code.png' #=> nil
+
+    # ZXing#decode! will raise an error if it can't decode the image.
+    ZXing.decode! 'image_without_a_code.png' #=> raises ZXing::UndecodableError
+
+== Decodable module
+
+A Decodable module is included (pun intended) to ease using the library with objects that return the URL or file path to decode when #path or #to_s is called.
+
+    require 'zxing/decodable'
+
+    class File
+      include Decodable
+    end
+
+    file = File.open('qrcode.png')
+    file.decode
