@@ -1,0 +1,10 @@
+c:\Users\MAK\Documents\Visual Studio 2015\Projects\BasicCrud\UnitTest\bin\Debug\UnitTest.dll
+c:\Users\MAK\Documents\Visual Studio 2015\Projects\BasicCrud\UnitTest\bin\Debug\UnitTest.pdb
+c:\Users\MAK\Documents\Visual Studio 2015\Projects\BasicCrud\UnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+c:\Users\MAK\Documents\Visual Studio 2015\Projects\BasicCrud\UnitTest\obj\Debug\UnitTest.csprojResolveAssemblyReference.cache
+c:\Users\MAK\Documents\Visual Studio 2015\Projects\BasicCrud\UnitTest\obj\Debug\UnitTest.dll
+c:\Users\MAK\Documents\Visual Studio 2015\Projects\BasicCrud\UnitTest\obj\Debug\UnitTest.pdb
+c:\Users\MAK\Documents\Visual Studio 2015\Projects\BasicCrud\UnitTest\bin\Debug\BasicCrud.exe
+c:\Users\MAK\Documents\Visual Studio 2015\Projects\BasicCrud\UnitTest\bin\Debug\System.Data.SQLite.dll
+c:\Users\MAK\Documents\Visual Studio 2015\Projects\BasicCrud\UnitTest\bin\Debug\BasicCrud.pdb
+c:\Users\MAK\Documents\Visual Studio 2015\Projects\BasicCrud\UnitTest\bin\Debug\System.Data.SQLite.xml
