@@ -4,7 +4,14 @@ public class TapToPlaceParent : MonoBehaviour
 {
     bool placing = false;
     float minDepressionAngle = 30;
-    // Called by GazeGestureManager when the user performs a Select gesture
+
+//private MeshRenderer meshRenderer;
+
+    void Start()
+    {
+   //     meshRenderer = this.gameObject.GetComponentInChildren<MeshRenderer>();
+    }
+
     void OnSelect()
     {
         // On each Select gesture, toggle whether the user is in placing mode.
@@ -15,7 +22,7 @@ public class TapToPlaceParent : MonoBehaviour
         {
             SpatialMapping.Instance.DrawVisualMeshes = true;
         }
-        // If the user is not in placing mode, hide the spatial mapping mesh.
+        // If the user is not in placing mode, hide the spatial mapping mesh. Disabled for emulator 
         //else
       //  {
     //        SpatialMapping.Instance.DrawVisualMeshes = false;
@@ -43,18 +50,14 @@ public class TapToPlaceParent : MonoBehaviour
                 gazeDirection.y = - adjustedY;
             }
             RaycastHit hitInfo;
-            if (Physics.Raycast(headPosition, gazeDirection, out hitInfo,
-                30.0f, SpatialMapping.PhysicsRaycastMask))
+            if (Physics.Raycast(headPosition, gazeDirection, out hitInfo, 30.0f, SpatialMapping.PhysicsRaycastMask))
             {
-                // Move this object's parent object to
-                // where the raycast hit the Spatial Mapping mesh.
-        //        this.transform.parent.position = hitInfo.point;
                 this.transform.position = hitInfo.point;
                 // Rotate this object's parent object to face the user.
                 Quaternion toQuat = Camera.main.transform.localRotation;
                 toQuat.x = 0;
                 toQuat.z = 0;
-         //       this.transform.parent.rotation = toQuat;
+
                 this.transform.rotation = toQuat;
             }
         }

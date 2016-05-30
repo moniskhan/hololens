@@ -25,6 +25,15 @@ public class GazeGestureManager : MonoBehaviour
                 FocusedObject.SendMessageUpwards("OnSelect");
             }
         };
+
+        recognizer.HoldStartedEvent += (source, ray) =>
+        {
+            // Send an OnSelect message to the focused object and its ancestors.
+            if (FocusedObject != null)
+            {
+                FocusedObject.SendMessageUpwards("OnHoldStarted");
+            }
+        };
         recognizer.StartCapturingGestures();
     }
 

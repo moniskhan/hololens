@@ -22,7 +22,10 @@ public class ShowMenu : MonoBehaviour
         recognizer.TappedEvent += (source, tapCount, ray) => {
             if (Time.time - lastTime < 1)
             {
-                ToggleMenu();
+            //    if(GazeGestureManager.Instance.FocusedObject == null)
+            //    {
+                    ToggleMenu();
+            //    }
                 lastTime = 0;  //Clear double click after one is triggered
             }
             else
