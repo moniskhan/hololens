@@ -8,7 +8,7 @@ using System.Data.SQLite;
 
 namespace BasicCrud
 {
-    class Program
+    public class Program
     {
         static void createDatabase()
         {
@@ -107,6 +107,38 @@ namespace BasicCrud
             }
         }
 
+        public static string getModel(string id)
+        {
+            try
+            {
+                SQLiteConnection conn;
+                string model = "";
+
+                conn = new SQLiteConnection("Data Source=ModelRefDatabase.sqlite;Version=3;");
+                conn.Open();
+                
+                // Reading from DB
+                string sql = "SELECT * FROM crud_table where id = @id;";
+                SQLiteCommand command = new SQLiteCommand(sql, conn);
+                command.Parameters.AddWithValue("@id", id);
+
+                SQLiteDataReader reader = command.ExecuteReader();
+
+                printModels(reader);
+
+                model = "Id: " + reader["id"] + "\t Link: " + reader["link"];
+
+                conn.Close();
+
+                return model;
+            }
+            catch (Exception msg)
+            {
+                Console.WriteLine(msg.ToString());
+                return msg.ToString();
+            }
+        }
+
         static void printModels(SQLiteDataReader reader)
         {
             while (reader.Read())
@@ -127,6 +159,7 @@ namespace BasicCrud
                 insertModel(m_dbConnection);
 
                 getModels(m_dbConnection);
+                getModel("1");
                 m_dbConnection.Close();
             }
             catch (Exception msg)
