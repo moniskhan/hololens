@@ -124,9 +124,11 @@ namespace BasicCrud
 
                 SQLiteDataReader reader = command.ExecuteReader();
 
-                printModels(reader);
-
-                model = "Id: " + reader["id"] + "\t Link: " + reader["link"];
+                while (reader.Read())
+                {
+                    Console.WriteLine("Id: " + reader["id"] + "\t Link: " + reader["link"]);
+                    model = "Id: " + reader["id"] + "\t Link: " + reader["link"];
+                }
 
                 conn.Close();
 
