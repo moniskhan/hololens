@@ -12,9 +12,9 @@ public class ChangeFurniture : MonoBehaviour {
         if (GazeGestureManager.Instance.FocusedObject.name == "basic_table")
         {
             Destroy(GazeGestureManager.Instance.FocusedObject.transform.parent.gameObject);
-            FurnitureFactory.Instance.CreateFurniture("WoodenTable", position, angle);
+            FurnitureFactory.Instance.CreateFurniture("BasicTable_WoodGrain", position, angle);
         }
-        if (GazeGestureManager.Instance.FocusedObject.name == "table_7103")
+        if (GazeGestureManager.Instance.FocusedObject.name == "basic_table_wood")
         {
             Destroy(GazeGestureManager.Instance.FocusedObject.transform.parent.gameObject);
             FurnitureFactory.Instance.CreateFurniture("BasicTable", position, angle);
