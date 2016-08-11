@@ -35,3 +35,12 @@ Origami/Library/*
 *.db
 *.opendb
 *.pdb
+
+FYDP/.vs/*
+FYDP/App/*
+FYDP/Library/*
+FYDP/obj/*
+FYDP/Temp/*
+FYDP/UWP/*
+FYDP/Assembly-CSharp.csproj/*
+FYDP/Origami.sln/*
