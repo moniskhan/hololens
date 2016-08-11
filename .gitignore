@@ -44,5 +44,4 @@ FYDP/Temp/*
 FYDP/UWP/*
 FYDP/Assembly-CSharp.csproj
 FYDP/Origami.sln
-*.meta
 FYDP/desktop.ini
