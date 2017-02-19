@@ -15,24 +15,16 @@ public class FurnitureFactory : MonoBehaviour
         deskLamp = "DeskLamp", roundLamp = "RoundLamp", woodenTable = "WoodenTable", r2d2 = "R2D2", basicWoodTable = "BasicWoodTable",
         wallLight = "light_wall", ceilingLight = "light_ceiling";
     List<string> furnitureNames;
+    AssetManager assetManager;
 
-    FurnitureOBJImporter furnitureImporter;
-    bool fetchRemoteModel = false;
-    Dictionary<string, string> furnitureNameToModelMap = new Dictionary<string, string>
-    {
-        // place holder models
-        { "WoodenTable", "https://dl.dropboxusercontent.com/u/49884199/furniture/table/table2/Table2.obj" },
-        { "BasicTable", "https://dl.dropboxusercontent.com/u/49884199/furniture/table/table3/Desk.obj" },
-        { "ModernSofa", "https://dl.dropboxusercontent.com/u/49884199/furniture/table/table4/t3.obj" }
-    };
     public void CreateFurniture(string furniture_name, Vector3 position = default(Vector3), Quaternion angle = default(Quaternion))
     {
-        
-        if (fetchRemoteModel && furnitureNameToModelMap.ContainsKey(furniture_name))
+        if (FurnitureConstants.FETCH_MODELS && FurnitureConstants.FURNITURE_MAP.ContainsKey(furniture_name))
         {
-            if (furnitureImporter == null)
-                furnitureImporter = gameObject.AddComponent<FurnitureOBJImporter>() as FurnitureOBJImporter;
-            furnitureImporter.LoadOBJ(furnitureNameToModelMap[furniture_name]);
+            if (assetManager == null)
+                assetManager = gameObject.AddComponent<AssetManager>() as AssetManager;
+            FurnitureMetadata metadata = FurnitureConstants.FURNITURE_MAP[furniture_name];
+            assetManager.InstantiateGameObject(metadata.bundle, metadata.name);
         }
         else
         {
@@ -61,19 +53,17 @@ public class FurnitureFactory : MonoBehaviour
 
     void ClearAll()
     {
-        if (fetchRemoteModel)
+        if (assetManager && FurnitureConstants.FETCH_MODELS)
         {
-            furnitureImporter.clearFurniture();
+            assetManager.clearFurnitureAssets();
         }
-        else
+
+        foreach (GameObject f in furnitures)
         {
-            foreach (GameObject f in furnitures)
-            {
-                f.SetActive(false);
-                Destroy(f);
-            }
-            furnitures.Clear();
+            f.SetActive(false);
+            Destroy(f);
         }
+        furnitures.Clear();
     }
 
     void Start()

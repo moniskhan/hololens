@@ -144,7 +144,7 @@ PlayerSettings:
     serializedVersion: 2
     m_Bits: 238
   iPhoneSdkVersion: 988
-  iOSTargetOSVersionString: 6.0
+  iOSTargetOSVersionString: 7.0
   tvOSSdkVersion: 0
   tvOSRequireExtendedGameController: 0
   tvOSTargetOSVersionString: 9.0
@@ -244,7 +244,8 @@ PlayerSettings:
     m_Devices: []
   - m_BuildTarget: Standalone
     m_Enabled: 0
-    m_Devices: []
+    m_Devices:
+    - Oculus
   - m_BuildTarget: Tizen
     m_Enabled: 0
     m_Devices: []
@@ -434,9 +435,7 @@ PlayerSettings:
   scriptingDefineSymbols:
     14: 
   platformArchitecture: {}
-  scriptingBackend:
-    Metro: 2
-    Standalone: 0
+  scriptingBackend: {}
   incrementalIl2cppBuild: {}
   additionalIl2CppArgs: 
   m_RenderingPath: 1
@@ -472,8 +471,9 @@ PlayerSettings:
       CodeGeneration: False
       EnterpriseAuthentication: False
       HumanInterfaceDevice: False
-      InternetClient: False
-      InternetClientServer: False
+      InputInjectionBrokered: False
+      InternetClient: True
+      InternetClientServer: True
       Location: False
       Microphone: True
       MusicLibrary: False
@@ -499,7 +499,7 @@ PlayerSettings:
   tizenGPSPermissions: 0
   tizenMicrophonePermissions: 0
   tizenDeploymentTarget: 
-  tizenDeploymentTargetType: 471538243
+  tizenDeploymentTargetType: -387588100
   tizenMinOSVersion: 0
   n3dsUseExtSaveData: 0
   n3dsCompressStaticMem: 1
@@ -541,15 +541,7 @@ PlayerSettings:
   XboxOneAllowedProductIds: []
   XboxOnePersistentLocalStorageSize: 0
   vrEditorSettings: {}
-  cloudServicesEnabled:
-    Analytics: 0
-    Build: 0
-    Collab: 0
-    ErrorHub: 0
-    Hub: 0
-    Purchasing: 0
-    UNet: 0
-    Unity_Ads: 0
+  cloudServicesEnabled: {}
   cloudProjectId: 
   projectName: 
   organizationId: 
