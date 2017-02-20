@@ -16,14 +16,14 @@ public class TapToPlaceParent : MonoBehaviour
 
     void OnSelect()
     {
+        ShowMenu.Instance.CancelClick();
         // On each Select gesture, toggle whether the user is in placing mode.
         placing = !placing;
-
-        
     }
 
     void OnRotateStart()
     {
+        ShowMenu.Instance.CancelClick();
         rotating = true;
     }
 

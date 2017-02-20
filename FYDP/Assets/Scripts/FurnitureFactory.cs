@@ -74,6 +74,12 @@ public class FurnitureFactory : MonoBehaviour
         furnitures.Clear();
     }
 
+    public void DeleteFurniture(GameObject obj)
+    {
+        furnitures.Remove(obj);
+        Destroy(obj);
+    }
+
     void Start()
     {
         furnitureNames = new List<string>() { basicTable, woodenChair, modernSofa, woodenChair2, deskLamp, roundLamp, woodenTable, r2d2, basicWoodTable, wallLight, ceilingLight };

@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.VR.WSA.Input;
 public class ShowMenu : MonoBehaviour
 {
-
+    public static ShowMenu Instance { get; private set; }
     public Transform menuObject;
     public GameObject menu; // Assign in inspector
     private bool isShowing;
@@ -16,6 +16,7 @@ public class ShowMenu : MonoBehaviour
 
     void Start()
     {
+        Instance = this;
         isShowing = true;
         lastTime = Time.time;
         // Set up a GestureRecognizer to detect Select gestures.
@@ -58,6 +59,11 @@ public class ShowMenu : MonoBehaviour
             menuObject.rotation = toQuat;
            
         }
+    }
+
+    public void CancelClick()
+    {
+        lastTime = 0;
     }
 
     void Update()
