@@ -51,6 +51,14 @@ public class FurnitureFactory : MonoBehaviour
         CreateFurniture(name);
     }
 
+    public void ResetAllFocus()
+    {
+        foreach (GameObject f in furnitures)
+        {
+            f.SendMessageUpwards("OnRotateStop");
+        }
+    }
+
     void ClearAll()
     {
         if (assetManager && FurnitureConstants.FETCH_MODELS)

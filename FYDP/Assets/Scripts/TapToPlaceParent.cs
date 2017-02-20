@@ -3,8 +3,10 @@
 public class TapToPlaceParent : MonoBehaviour
 {
     bool placing = false;
+    bool rotating = false;
     float minDepressionAngle = 30;
     float minAscensionAngle = 30;
+    float RotationSensitivity = 1.2f;
 //private MeshRenderer meshRenderer;
 
     void Start()
@@ -18,6 +20,16 @@ public class TapToPlaceParent : MonoBehaviour
         placing = !placing;
 
         
+    }
+
+    void OnRotateStart()
+    {
+        rotating = true;
+    }
+
+    void OnRotateStop()
+    {
+        rotating = false;
     }
 
     bool isWall()
@@ -80,19 +92,42 @@ public class TapToPlaceParent : MonoBehaviour
                 }
             }
 
-
-
             RaycastHit hitInfo;
             if (Physics.Raycast(headPosition, gazeDirection, out hitInfo, 30.0f, SpatialMapping.PhysicsRaycastMask))
             {
                 this.transform.position = hitInfo.point;
+
+                /*
                 // Rotate this object's parent object to face the user.
                 Quaternion toQuat = Camera.main.transform.localRotation;
+
                 toQuat.x = 0;
                 toQuat.z = 0;
+                if (GazeGestureManager.Instance.IsNavigating)
+                {
+                    float rotationFactor;
 
+                    rotationFactor = GazeGestureManager.Instance.NavigationPosition.x * RotationSensitivity;
+  
+                    toQuat.y = -1 * rotationFactor;
+
+                }
                 this.transform.rotation = toQuat;
+                */
             }
+            
+        }
+        if (rotating && GazeGestureManager.Instance.IsNavigating)
+        {
+            Quaternion toQuat = Camera.main.transform.localRotation;
+
+            toQuat.x = 0;
+            toQuat.z = 0;
+            float rotationFactor;
+            rotationFactor = GazeGestureManager.Instance.NavigationPosition.x / RotationSensitivity;
+            toQuat.y = -1 * rotationFactor;
+
+            this.transform.rotation = toQuat;
         }
     }
 }

@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 64b10fe58b77f7245a765686e7a21f60
 timeCreated: 1487525829
+=======
+guid: 53e8698914346964487d4f43a352db9f
+timeCreated: 1487528219
+>>>>>>> Added ability to tap and hold to rotate. Wall paint is hidden by default
 licenseType: Free
 DefaultImporter:
   userData: 
