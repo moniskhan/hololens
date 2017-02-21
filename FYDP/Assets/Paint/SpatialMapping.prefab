@@ -16,19 +16,19 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  serializedVersion: 4
   m_Component:
-  - component: {fileID: 4000013298573622}
-  - component: {fileID: 114000012698980792}
-  - component: {fileID: 114000011154029958}
-  - component: {fileID: 114000010641181420}
+  - 4: {fileID: 4000013298573622}
+  - 114: {fileID: 114000012698980792}
+  - 114: {fileID: 114000011154029958}
+  - 114: {fileID: 114000010641181420}
   m_Layer: 0
   m_Name: SpatialMapping
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4000013298573622
 Transform:
   m_ObjectHideFlags: 1
