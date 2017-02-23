@@ -73,8 +73,8 @@
 				if (abs(normal.y) < 0.2f)
 				{
 					//ret.b = 1 - (abs(wpmod.y) / (_LineScale* _LinesPerMeter));
-					ret.b = 1;
-					ret.r = 1;
+					ret.b = 0.5;
+					ret.r = 0;
 					ret.g = 0;
 				}
 
