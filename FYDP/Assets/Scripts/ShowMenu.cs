@@ -6,7 +6,7 @@ public class ShowMenu : MonoBehaviour
     public static ShowMenu Instance { get; private set; }
     public Transform menuObject;
     public GameObject menu; // Assign in inspector
-    private bool isShowing;
+    public bool isShowing;
    
     GestureRecognizer recognizer;
 
@@ -19,6 +19,9 @@ public class ShowMenu : MonoBehaviour
         Instance = this;
         isShowing = true;
         lastTime = Time.time;
+        menuObject = transform.Find("Canvas");
+        menu = menuObject.gameObject;
+
         // Set up a GestureRecognizer to detect Select gestures.
         recognizer = new GestureRecognizer();
         recognizer.TappedEvent += (source, tapCount, ray) => {
@@ -40,8 +43,6 @@ public class ShowMenu : MonoBehaviour
 
     void ToggleMenu()
     {
-        menuObject = transform.Find("Canvas");
-        menu = menuObject.gameObject;
         isShowing = !isShowing;
         menu.SetActive(isShowing);
        
