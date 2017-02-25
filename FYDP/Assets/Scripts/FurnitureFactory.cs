@@ -11,10 +11,7 @@ public class FurnitureFactory : MonoBehaviour
     Dictionary<string, GameObject> avaliableObjects = new Dictionary<string, GameObject>();
     List<Object> furnitures = new List<Object>();
 
-    public string basicTable = "BasicTable", woodenChair = "WoodenChair", modernSofa = "ModernSofa", woodenChair2 = "WoodenChair2",
-        deskLamp = "DeskLamp", roundLamp = "RoundLamp", woodenTable = "WoodenTable", r2d2 = "R2D2", basicWoodTable = "BasicWoodTable",
-        wallLight = "light_wall", ceilingLight = "light_ceiling";
-    List<string> furnitureNames;
+    public FurnitureMapping details;
     AssetManager assetManager;
 
     public void CreateFurniture(string furniture_name, Vector3 position = default(Vector3), Quaternion angle = default(Quaternion))
@@ -82,8 +79,8 @@ public class FurnitureFactory : MonoBehaviour
 
     void Start()
     {
-        furnitureNames = new List<string>() { basicTable, woodenChair, modernSofa, woodenChair2, deskLamp, roundLamp, woodenTable, r2d2, basicWoodTable, wallLight, ceilingLight };
-        foreach(var name in furnitureNames)
+        details = new FurnitureMapping();
+        foreach(var name in details.furnitureIds)
         {
             furniture = GameObject.Find(name);
             avaliableObjects[name] = furniture;

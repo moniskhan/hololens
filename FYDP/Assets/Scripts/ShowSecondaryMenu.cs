@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.VR.WSA.Input;
 using UnityEngine.UI;
+using System.IO;
 
 public class ShowSecondaryMenu : MonoBehaviour
 {
@@ -10,14 +11,13 @@ public class ShowSecondaryMenu : MonoBehaviour
     public GameObject menu; // Assign in inspector
     public string selectedItem;
     public bool isShowing;
-    private GameObject image;
+    private Image image;
     private Text title;
     private Text description;
-
     void Start()
     {
         Instance = this;
-        image = GameObject.Find("Secondary Menu Image");
+        image = GameObject.Find("Secondary Menu Image").GetComponent<Image>();
         description = GameObject.Find("Secondary Menu Description").GetComponent<Text>();
         title = GameObject.Find("Secondary Menu Name").GetComponent<Text>();
 
@@ -56,7 +56,7 @@ public class ShowSecondaryMenu : MonoBehaviour
             transform.Translate(Vector3.right * 0.8f, Camera.main.transform);
         }
 
-        updateSecondaryMenu();
+        UpdateSecondaryMenu();
     }
 
     public void CloseMenu()
@@ -67,10 +67,15 @@ public class ShowSecondaryMenu : MonoBehaviour
         menu.SetActive(false);
     }
 
-    void updateSecondaryMenu()
+    void UpdateSecondaryMenu()
     {
-        title.text = selectedItem;
-        description.text = selectedItem + " description\n This furniture is very nice, you should buy it ;)";
+        if (FurnitureFactory.Instance.details.furnitureMappings.ContainsKey(selectedItem))
+        {
+            FurnitureDetail detail = FurnitureFactory.Instance.details.furnitureMappings[selectedItem];
+            title.text = detail.name;
+            description.text = detail.description;
+            image.sprite = Resources.Load<Sprite>(detail.imagePath);
+        }
     }
 
     public void Confirm()
