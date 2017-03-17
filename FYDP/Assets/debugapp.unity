@@ -2827,8 +2827,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chairList:
-  - {fileID: 1185698894344300, guid: fea66d200d648104fafce67bfd282bc5, type: 2}
-  - {fileID: 1337846294926894, guid: 9929baff87192c245aca48e61a9c8a17, type: 2}
+  - {fileID: 1309490626726766, guid: fea66d200d648104fafce67bfd282bc5, type: 2}
+  - {fileID: 1634717749434736, guid: 9929baff87192c245aca48e61a9c8a17, type: 2}
   - {fileID: 1482873603377378, guid: 4a7850939565eda4190dc49a195a5077, type: 2}
   - {fileID: 1249010599203686, guid: 31a1c149edbbb994ebf6494c863f25a5, type: 2}
   - {fileID: 1408470981017356, guid: c8f6ef7cc1365c943aaf72a80723ff48, type: 2}
