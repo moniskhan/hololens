@@ -96,6 +96,7 @@
     <Compile Include="Assets\Scripts\FurnitureConstants.cs" />
     <Compile Include="Assets\Scripts\FurnitureFactory.cs" />
     <Compile Include="Assets\Scripts\FurnitureLoader.cs" />
+    <Compile Include="Assets\Scripts\FurnitureMapping.cs" />
     <Compile Include="Assets\Scripts\FurnitureOBJImporter.cs" />
     <Compile Include="Assets\Scripts\GazeGestureManager.cs" />
     <Compile Include="Assets\Scripts\GeometryBuffer.cs" />
@@ -104,6 +105,7 @@
     <Compile Include="Assets\Scripts\ObjectSurfaceObserver.cs" />
     <Compile Include="Assets\Scripts\PaintFactory.cs" />
     <Compile Include="Assets\Scripts\ShowMenu.cs" />
+    <Compile Include="Assets\Scripts\ShowSecondaryMenu.cs" />
     <Compile Include="Assets\Scripts\Singleton.cs" />
     <Compile Include="Assets\Scripts\SpatialMappingManager.cs" />
     <Compile Include="Assets\Scripts\SpatialMappingObserver.cs" />

@@ -2827,13 +2827,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chairList:
-  - {fileID: 1309490626726766, guid: fea66d200d648104fafce67bfd282bc5, type: 2}
-  - {fileID: 1634717749434736, guid: 9929baff87192c245aca48e61a9c8a17, type: 2}
-  - {fileID: 1482873603377378, guid: 4a7850939565eda4190dc49a195a5077, type: 2}
-  - {fileID: 1249010599203686, guid: 31a1c149edbbb994ebf6494c863f25a5, type: 2}
-  - {fileID: 1408470981017356, guid: c8f6ef7cc1365c943aaf72a80723ff48, type: 2}
-  - {fileID: 1074800409779326, guid: a26ea0eb913520e4da3c1dd8066c74c7, type: 2}
-  - {fileID: 1802353514105328, guid: 9b24bb9151c85644a87f04a7715c2d3e, type: 2}
+  - {fileID: 1800154445502136, guid: 9b8c3e2418ec4794da490c53d2c6448f, type: 2}
+  - {fileID: 1368363745948482, guid: 222a3cc34507f8941820d6623517f83b, type: 2}
+  - {fileID: 1209782390460354, guid: adf800f9b4715904887c808d889635f9, type: 2}
+  - {fileID: 1170067904131196, guid: 69ed8ef6382e30340805a3d3369afa22, type: 2}
+  - {fileID: 1376946469520212, guid: 746142fb196e54a40ad45d7fe51070d1, type: 2}
+  - {fileID: 1189043633613470, guid: b0270f0af81b68d45ae59d2345c959dd, type: 2}
+  - {fileID: 1023908594002056, guid: 1fed9fac46a06db438b97f7596640306, type: 2}
   drawerList:
   - {fileID: 1322523350096402, guid: 7033931b41d2f9d438ec5068b51b4ea2, type: 2}
   - {fileID: 1602040385860794, guid: 0b2c55360d52ae74f88f8767bbcf68de, type: 2}
@@ -4088,6 +4088,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuObject: {fileID: 0}
   menu: {fileID: 0}
+  isShowing: 0
   lastTime: 0
 --- !u!4 &1244784045
 Transform:
@@ -4132,17 +4133,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   furniture: {fileID: 0}
-  basicTable: BasicTable
-  woodenChair: WoodenChair
-  modernSofa: ModernSofa
-  woodenChair2: WoodenChair2
-  deskLamp: DeskLamp
-  roundLamp: RoundLamp
-  woodenTable: WoodenTable
-  r2d2: R2D2
-  basicWoodTable: BasicWoodTable
-  wallLight: light_wall
-  ceilingLight: light_ceiling
 --- !u!114 &1245286503
 MonoBehaviour:
   m_ObjectHideFlags: 0
