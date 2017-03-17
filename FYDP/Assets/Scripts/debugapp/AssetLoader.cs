@@ -4,13 +4,7 @@ using UnityEngine;
 
 public class AssetLoader : MonoBehaviour {
 
-    public List<GameObject> chairList = new List<GameObject>();
-    public List<GameObject> drawerList = new List<GameObject>();
-    public List<GameObject> tableList = new List<GameObject>();
-    public List<GameObject> sofaList = new List<GameObject>();
-    public List<GameObject> bedList = new List<GameObject>();
-    public List<GameObject> storageList = new List<GameObject>();
-    public List<GameObject> lightsList = new List<GameObject>();
+    public GameObject spawner;
 
     bool isRemote = false;
     List<GameObject> furntiureInstances = new List<GameObject>();
@@ -46,7 +40,7 @@ public class AssetLoader : MonoBehaviour {
     {
         Vector3 infront = new Vector3(0.5f, -0.5f, 2.0f);
         Vector3 position = Camera.main.ViewportToWorldPoint(infront);
-        GameObject furniture = findAsset(bundle, name);
+        GameObject furniture = spawner.GetComponent<SpawnList>().findAsset(bundle, name);
         if (furniture != null)
         {
             GameObject furnitureInstance = Instantiate(furniture, position, Quaternion.identity);
@@ -60,39 +54,5 @@ public class AssetLoader : MonoBehaviour {
         this.GetComponent<AssetManager>().InstantiateGameObject(bundle, name);
     }
 
-    private GameObject findAsset(string bundle, string asset)
-    {
-        List<GameObject> bundleList = findBundle(bundle);
-        foreach (GameObject gObject in bundleList) {
-            if (gObject.name.Equals(asset))
-            {
-                return gObject;
-            }
-        }
-        Debug.Log("Asset: " + asset + " from bundle: " + bundle + " not found!");
-        return null;
-    }
-
-    private List<GameObject> findBundle(string bundle)
-    {
-        switch(bundle)
-        {
-            case "chairassets":
-                return chairList;
-            case "drawerassets":
-                return drawerList;
-            case "tableassets":
-                return tableList;
-            case "sofaassets":
-                return sofaList;
-            case "bedassets":
-                return bedList;
-            case "storageassets":
-                return storageList;
-            case "lightassets":
-                return lightsList;
-            default:
-                return new List<GameObject>();
-        }
-    }
+   
 }

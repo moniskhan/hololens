@@ -9,19 +9,19 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1368363745948482}
+  m_RootGameObject: {fileID: 1374270629867650}
   m_IsPrefabParent: 1
---- !u!1 &1032482518405126
+--- !u!1 &1210170405530534
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4150615544222628}
-  - component: {fileID: 33499928615473598}
-  - component: {fileID: 23021517855226806}
-  - component: {fileID: 64839168484397556}
+  - component: {fileID: 4425450244126516}
+  - component: {fileID: 33929707810337628}
+  - component: {fileID: 23939700641678636}
+  - component: {fileID: 64890421892856554}
   m_Layer: 0
   m_Name: IKEA-Fritz_chair-3D
   m_TagString: Untagged
@@ -29,14 +29,14 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1368363745948482
+--- !u!1 &1374270629867650
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4731116840278570}
+  - component: {fileID: 4642336616010458}
   m_Layer: 0
   m_Name: IkeaFritzChair
   m_TagString: Untagged
@@ -44,39 +44,39 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4150615544222628
+--- !u!4 &4425450244126516
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1032482518405126}
+  m_GameObject: {fileID: 1210170405530534}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4731116840278570}
+  m_Father: {fileID: 4642336616010458}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4731116840278570
+--- !u!4 &4642336616010458
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1368363745948482}
+  m_GameObject: {fileID: 1374270629867650}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4150615544222628}
+  - {fileID: 4425450244126516}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23021517855226806
+--- !u!23 &23939700641678636
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1032482518405126}
+  m_GameObject: {fileID: 1210170405530534}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -105,19 +105,19 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &33499928615473598
+--- !u!33 &33929707810337628
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1032482518405126}
+  m_GameObject: {fileID: 1210170405530534}
   m_Mesh: {fileID: 4300000, guid: b6c800f62f4c13347b0f700ff7a13981, type: 3}
---- !u!64 &64839168484397556
+--- !u!64 &64890421892856554
 MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1032482518405126}
+  m_GameObject: {fileID: 1210170405530534}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1

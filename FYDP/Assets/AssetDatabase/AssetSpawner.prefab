@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1766238740867714}
+  m_IsPrefabParent: 1
+--- !u!1 &1766238740867714
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4532651259496140}
+  - component: {fileID: 114945010899045712}
+  m_Layer: 0
+  m_Name: AssetSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4532651259496140
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1766238740867714}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114945010899045712
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1766238740867714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 755fb9d6f1980c745b9c54b74f259860, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chairs:
+  - {fileID: 1416568007168162, guid: 9b8c3e2418ec4794da490c53d2c6448f, type: 2}
+  - {fileID: 1374270629867650, guid: 222a3cc34507f8941820d6623517f83b, type: 2}
+  - {fileID: 1701603215671728, guid: adf800f9b4715904887c808d889635f9, type: 2}
+  - {fileID: 1456071472759906, guid: 0fb57611451dd7c4fa1ddc18ecdb6922, type: 2}
+  - {fileID: 1244194626899316, guid: 13a1c073e8daafe4388c89072a208212, type: 2}
+  - {fileID: 1761508341353772, guid: 780a626c89af70840ae2bb356865553a, type: 2}
+  - {fileID: 1157209723466720, guid: 1fed9fac46a06db438b97f7596640306, type: 2}
+  tables:
+  - {fileID: 1882860711163396, guid: 2c64040f3071b8b4e99655d70bf849ba, type: 2}
+  - {fileID: 1013685017186174, guid: 367bf2a78717a1c4481b8af3e44d8aec, type: 2}
+  - {fileID: 1920075113975348, guid: c351d496940477046a84aed9783ef840, type: 2}
+  - {fileID: 1880147076712446, guid: d430f425a259c55478dbf061386a758f, type: 2}
+  - {fileID: 1515486977887862, guid: 2e75f222b5721164d8b41400be8ad1d1, type: 2}
+  - {fileID: 1361969383893126, guid: 3140e5a718d2c1e4d9481dc532c0f5c2, type: 2}
+  - {fileID: 1828015632436326, guid: 5bff9653b6db9f84c931994610220b4a, type: 2}
+  sofas:
+  - {fileID: 1725351862533680, guid: 917740792a6ea8c428f338ce61825b20, type: 2}
+  - {fileID: 1482973016916486, guid: 9ff3478cf52352b46b47cbf355fc03ba, type: 2}
+  - {fileID: 1847223425930354, guid: e89bd2497267ada4489a392e4ef63ece, type: 2}
+  - {fileID: 1281975047024498, guid: fdbf372ad428c0447b516baf9e70b37e, type: 2}
+  - {fileID: 1300720118307466, guid: aae54f8c84c45be4ba6f866c608efc41, type: 2}
+  - {fileID: 1538861615628240, guid: 52d87b09d64794b4c8e151b6da2020c0, type: 2}
+  - {fileID: 1427819314299360, guid: 7f5e75b077c468b4ba548af481d5fd46, type: 2}
+  storage:
+  - {fileID: 1131201629679418, guid: baa0f3861a542f0478f7117da6f43df1, type: 2}
+  - {fileID: 1673854243873164, guid: 9928a39ebb65aec43b46e3d5f9a94e76, type: 2}
+  drawers:
+  - {fileID: 1590282358594850, guid: b05eff2e4fd8c984eb6264de54d2f035, type: 2}
+  - {fileID: 1391880856113324, guid: 1e1e30439494cce46a73d9e331025108, type: 2}
+  - {fileID: 1417638475532338, guid: 8f896b4dcc2395842a414482d265b912, type: 2}
+  - {fileID: 1719402015968008, guid: c59633612f2e1944b83f85804c6bae2f, type: 2}
+  lights:
+  - {fileID: 1695431570132028, guid: 6e212503fad70ae42ae7d2bc4df58384, type: 2}
+  - {fileID: 1139137098491518, guid: e5d4a50dbbf59854cae3b228bc9c520d, type: 2}
+  - {fileID: 1504572400007102, guid: ba0cb00c33c007a4998d57731a95acaf, type: 2}
+  - {fileID: 1939796734315922, guid: 9d657dc9570be7645bd32d5ed54e7e18, type: 2}
+  beds:
+  - {fileID: 1198865825809876, guid: e0f023bc9c3914f4784f53be9068c8ba, type: 2}
+  - {fileID: 1098925942620140, guid: db1b8d6c416b22f4f8638d8ad59edc57, type: 2}
+  - {fileID: 1198580445475574, guid: ec0c25640153c2744b0d02576170f3d2, type: 2}

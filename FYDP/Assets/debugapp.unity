@@ -187,7 +187,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 27
           m_FloatArgument: 0
-          m_StringArgument: bedassets,IKEABeddingeSofaBedFrame3D
+          m_StringArgument: bedassets,IkeaBeddingeSofaBedFrame
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -1331,7 +1331,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 22
           m_FloatArgument: 0
-          m_StringArgument: sofaassets,IKEAKipplan2SeatSofa2SeatSofa3D
+          m_StringArgument: sofaassets,IkeaKipplan2SeatSofa
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -1629,6 +1629,53 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.20376594, y: 0.031120135, z: 0.20246291}
   m_Center: {x: -0.0006515967, y: 0.015640153, z: 0.002606331}
+--- !u!1001 &498100356
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4532651259496140, guid: 446f5a9fcddb4324099311f30674a60b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4532651259496140, guid: 446f5a9fcddb4324099311f30674a60b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4532651259496140, guid: 446f5a9fcddb4324099311f30674a60b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4532651259496140, guid: 446f5a9fcddb4324099311f30674a60b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4532651259496140, guid: 446f5a9fcddb4324099311f30674a60b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4532651259496140, guid: 446f5a9fcddb4324099311f30674a60b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4532651259496140, guid: 446f5a9fcddb4324099311f30674a60b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4532651259496140, guid: 446f5a9fcddb4324099311f30674a60b, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 446f5a9fcddb4324099311f30674a60b, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &498100357 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1766238740867714, guid: 446f5a9fcddb4324099311f30674a60b,
+    type: 2}
+  m_PrefabInternal: {fileID: 498100356}
 --- !u!1 &502701392
 GameObject:
   m_ObjectHideFlags: 0
@@ -1725,7 +1772,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 26
           m_FloatArgument: 0
-          m_StringArgument: sofaaassets,IKEAVreta3SeatSofaMjukIvory
+          m_StringArgument: sofaassets,IkeaVreta3SeatSofaMjukIvory
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -2080,7 +2127,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 28
           m_FloatArgument: 0
-          m_StringArgument: bedassets,IKEAHeimdalBed160X200
+          m_StringArgument: bedassets,IkeaHeimdalBed160X200
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -2826,47 +2873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 980896101ee10a0478595109554873a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chairList:
-  - {fileID: 1800154445502136, guid: 9b8c3e2418ec4794da490c53d2c6448f, type: 2}
-  - {fileID: 1368363745948482, guid: 222a3cc34507f8941820d6623517f83b, type: 2}
-  - {fileID: 1209782390460354, guid: adf800f9b4715904887c808d889635f9, type: 2}
-  - {fileID: 1170067904131196, guid: 69ed8ef6382e30340805a3d3369afa22, type: 2}
-  - {fileID: 1376946469520212, guid: 746142fb196e54a40ad45d7fe51070d1, type: 2}
-  - {fileID: 1189043633613470, guid: b0270f0af81b68d45ae59d2345c959dd, type: 2}
-  - {fileID: 1023908594002056, guid: 1fed9fac46a06db438b97f7596640306, type: 2}
-  drawerList:
-  - {fileID: 1322523350096402, guid: 7033931b41d2f9d438ec5068b51b4ea2, type: 2}
-  - {fileID: 1602040385860794, guid: 0b2c55360d52ae74f88f8767bbcf68de, type: 2}
-  - {fileID: 1988413274864882, guid: c3f8dd6b9fe695f4db8ce822bd1477a9, type: 2}
-  - {fileID: 1402382249197218, guid: 5acdeb427d2385e41a5ecedad673a9d9, type: 2}
-  tableList:
-  - {fileID: 1515221593789954, guid: 234d2f06ccc68fd41862e669136febc9, type: 2}
-  - {fileID: 1222478279946808, guid: 81ace43af13c327439489cc705877c55, type: 2}
-  - {fileID: 1818594347580592, guid: 0674f55dee01dec4cb0428fb1902dfa0, type: 2}
-  - {fileID: 1083693894709410, guid: b965bfa3a8c971c45b2fe3fee4750435, type: 2}
-  - {fileID: 1498462072756386, guid: 16e8d389723b8e2448ed15867f20875c, type: 2}
-  - {fileID: 1535734921982430, guid: f9b9c26f6f23f254b9b2355b4f970996, type: 2}
-  - {fileID: 1670906036159148, guid: af009d9e85f4ec2469fd9efb83528fc6, type: 2}
-  sofaList:
-  - {fileID: 1706364546640838, guid: c30a82d791af34646bbac413c3e47cc7, type: 2}
-  - {fileID: 1490193975714432, guid: 780055032e8f7cc4ebbd38c0be3ed5a8, type: 2}
-  - {fileID: 1993920142016354, guid: 3844c6fa7df2b684894ca2120b09acd4, type: 2}
-  - {fileID: 1271830009128178, guid: 81767d2b81ca8f8499de50fe83f58ebc, type: 2}
-  - {fileID: 1792360347882000, guid: 5bd85d1fa8113de4d878d4939b18e0d2, type: 2}
-  - {fileID: 1163600869260244, guid: b743fc6e8857b15428402884ee608ab0, type: 2}
-  - {fileID: 1109310705878186, guid: d2ffb9a1ec0526a4787a2bb6fb6cd523, type: 2}
-  bedList:
-  - {fileID: 1403283760115268, guid: b9a0b56fc44f58249a910d3551199210, type: 2}
-  - {fileID: 1359469831979868, guid: fe79b1514dbfa104d86a0fbc54b7438f, type: 2}
-  - {fileID: 1257840894949102, guid: 6a551ebc890ac5c4983c80578cf05456, type: 2}
-  storageList:
-  - {fileID: 1117053994477656, guid: 87dedc7887c04fb43b18882d53c5f731, type: 2}
-  - {fileID: 1518723031798452, guid: 76d561ab53317d443b3f57fde7b64dae, type: 2}
-  lightsList:
-  - {fileID: 1993920252032350, guid: 08695ad63bc2cf940a4f6a0cfc01c65a, type: 2}
-  - {fileID: 1450096338782460, guid: 252af1614e98abb44b3260174c08aa1e, type: 2}
-  - {fileID: 1310913779709326, guid: 8873fd485a27ff344b58601fdf66ac0e, type: 2}
-  - {fileID: 1561908257458954, guid: 391050480b488fb4aac3066839dc5079, type: 2}
+  spawner: {fileID: 498100357}
 --- !u!4 &829800825
 Transform:
   m_ObjectHideFlags: 0
@@ -3275,7 +3282,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 11
           m_FloatArgument: 0
-          m_StringArgument: tableassets,IKE010002BjurstaTableAndRogerChairs
+          m_StringArgument: tableassets,Ike010002BjurstaTableAndRogerChairs
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -3835,7 +3842,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: fc7de18fc4ab6fd4697b695b31ff9a95, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e933f2ac1a7abe1498b55d52fa15d9c8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4264,7 +4271,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 10
           m_FloatArgument: 0
-          m_StringArgument: drawerassets,IkeaHemnesChestOf3DSrawers
+          m_StringArgument: drawerassets,IkeaHemnesChestOf3Drawers
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -5706,7 +5713,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 31
           m_FloatArgument: 0
-          m_StringArgument: lightassets,IKEABasiskPendantLamp3D
+          m_StringArgument: lightassets,IkeaBasiskPendantLamp
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -6343,7 +6350,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 21
           m_FloatArgument: 0
-          m_StringArgument: sofaaassets,IkeaExarby3SeatsSofa
+          m_StringArgument: sofaassets,IkeaExarby3SeatsSofa
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -6653,7 +6660,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 32
           m_FloatArgument: 0
-          m_StringArgument: lightassets,IKEABasiskTableLamp3D
+          m_StringArgument: lightassets,IkeaBasiskTableLamp
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -6921,7 +6928,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
           m_FloatArgument: 0
-          m_StringArgument: chairassets,IkeaGilberChair
+          m_StringArgument: chairassets,IkeaGilbertChair
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -7482,7 +7489,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 13
           m_FloatArgument: 0
-          m_StringArgument: tableassets,IKEAGrimleTableAnd5Chairs
+          m_StringArgument: tableassets,IkeaGrimleTableAnd5Chairs
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,

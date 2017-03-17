@@ -9,34 +9,16 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1800154445502136}
+  m_RootGameObject: {fileID: 1416568007168162}
   m_IsPrefabParent: 1
---- !u!1 &1201608163116348
+--- !u!1 &1416568007168162
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4431345228064076}
-  - component: {fileID: 33871164420192570}
-  - component: {fileID: 23518066248944346}
-  - component: {fileID: 64971677584822370}
-  m_Layer: 0
-  m_Name: IKEA-Forsby_Small_Stool-3D
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1800154445502136
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4948351062706272}
+  - component: {fileID: 4816029713535230}
   m_Layer: 0
   m_Name: IkeaForsbySmallStool
   m_TagString: Untagged
@@ -44,39 +26,57 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4431345228064076
+--- !u!1 &1983868656247712
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4414236325924086}
+  - component: {fileID: 33959475459690374}
+  - component: {fileID: 23261916480679078}
+  - component: {fileID: 64941162772179512}
+  m_Layer: 0
+  m_Name: IKEA-Forsby_Small_Stool-3D
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4414236325924086
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1201608163116348}
+  m_GameObject: {fileID: 1983868656247712}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4948351062706272}
+  m_Father: {fileID: 4816029713535230}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4948351062706272
+--- !u!4 &4816029713535230
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1800154445502136}
+  m_GameObject: {fileID: 1416568007168162}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4431345228064076}
+  - {fileID: 4414236325924086}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23518066248944346
+--- !u!23 &23261916480679078
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1201608163116348}
+  m_GameObject: {fileID: 1983868656247712}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -103,19 +103,19 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &33871164420192570
+--- !u!33 &33959475459690374
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1201608163116348}
+  m_GameObject: {fileID: 1983868656247712}
   m_Mesh: {fileID: 4300000, guid: b444b1b3ea94da14b912207a30100805, type: 3}
---- !u!64 &64971677584822370
+--- !u!64 &64941162772179512
 MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1201608163116348}
+  m_GameObject: {fileID: 1983868656247712}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
