@@ -69,6 +69,7 @@ public class AssetLoader : MonoBehaviour {
                 return gObject;
             }
         }
+        Debug.Log("Asset: " + asset + " from bundle: " + bundle + " not found!");
         return null;
     }
 

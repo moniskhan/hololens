@@ -9,19 +9,35 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1603646209212604}
+  m_RootGameObject: {fileID: 1792360347882000}
   m_IsPrefabParent: 1
---- !u!1 &1003968052727746
+--- !u!1 &1792360347882000
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4818397639871110}
-  - component: {fileID: 33791488251573794}
-  - component: {fileID: 23338925704636576}
-  - component: {fileID: 64930236530750130}
+  - component: {fileID: 4117311357510236}
+  - component: {fileID: 114428986159596164}
+  m_Layer: 0
+  m_Name: IkeaTullstaArmchair
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1839200512770048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4603962631212794}
+  - component: {fileID: 33683842711698596}
+  - component: {fileID: 23094996331167998}
+  - component: {fileID: 64542699411165384}
   m_Layer: 0
   m_Name: IKEA-Tullsta_Armchair-3D
   m_TagString: Untagged
@@ -29,55 +45,39 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1603646209212604
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4383806319016530}
-  - component: {fileID: 114045891873620304}
-  m_Layer: 0
-  m_Name: IKEATullstaArmchair
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4383806319016530
+--- !u!4 &4117311357510236
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1603646209212604}
+  m_GameObject: {fileID: 1792360347882000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4818397639871110}
+  - {fileID: 4603962631212794}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4818397639871110
+--- !u!4 &4603962631212794
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1003968052727746}
+  m_GameObject: {fileID: 1839200512770048}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4383806319016530}
+  m_Father: {fileID: 4117311357510236}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23338925704636576
+--- !u!23 &23094996331167998
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1003968052727746}
+  m_GameObject: {fileID: 1839200512770048}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -104,19 +104,19 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &33791488251573794
+--- !u!33 &33683842711698596
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1003968052727746}
-  m_Mesh: {fileID: 4300000, guid: ce6ad80ffc0149b42876ff015ae775ba, type: 3}
---- !u!64 &64930236530750130
+  m_GameObject: {fileID: 1839200512770048}
+  m_Mesh: {fileID: 4300000, guid: 5da5ddfb742ec4848b4bbd0cf39ccd37, type: 3}
+--- !u!64 &64542699411165384
 MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1003968052727746}
+  m_GameObject: {fileID: 1839200512770048}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -124,13 +124,13 @@ MeshCollider:
   m_Convex: 0
   m_InflateMesh: 0
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: ce6ad80ffc0149b42876ff015ae775ba, type: 3}
---- !u!114 &114045891873620304
+  m_Mesh: {fileID: 4300000, guid: 5da5ddfb742ec4848b4bbd0cf39ccd37, type: 3}
+--- !u!114 &114428986159596164
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1603646209212604}
+  m_GameObject: {fileID: 1792360347882000}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb495d94f3456744d9147310062e7778, type: 3}

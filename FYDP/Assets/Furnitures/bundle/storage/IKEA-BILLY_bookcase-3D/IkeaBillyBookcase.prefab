@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4568453193920654}
   - component: {fileID: 114161105297917078}
   m_Layer: 0
-  m_Name: IKEABILLYBookcase
+  m_Name: IkeaBillyBookcase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -9,35 +9,17 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1678635162641054}
+  m_RootGameObject: {fileID: 1074800409779326}
   m_IsPrefabParent: 1
---- !u!1 &1303393316945826
+--- !u!1 &1074800409779326
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4472568137473338}
-  - component: {fileID: 33439009228716594}
-  - component: {fileID: 23076675093677192}
-  - component: {fileID: 64339971648850592}
-  m_Layer: 0
-  m_Name: IKEA-Skruvsta_Swivel_Chair-3d
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1678635162641054
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4580039244249318}
-  - component: {fileID: 114770015149374062}
+  - component: {fileID: 4646509152975686}
+  - component: {fileID: 114769886044736698}
   m_Layer: 0
   m_Name: IkeaSkruvstaSwivelChair
   m_TagString: Untagged
@@ -45,39 +27,57 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4472568137473338
+--- !u!1 &1307889566020696
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4587259418987898}
+  - component: {fileID: 33605867803901146}
+  - component: {fileID: 23038403299307252}
+  - component: {fileID: 64977781580362450}
+  m_Layer: 0
+  m_Name: IKEA-Skruvsta_Swivel_Chair-3d
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4587259418987898
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1303393316945826}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
+  m_GameObject: {fileID: 1307889566020696}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4580039244249318}
+  m_Father: {fileID: 4646509152975686}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4580039244249318
+--- !u!4 &4646509152975686
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1678635162641054}
+  m_GameObject: {fileID: 1074800409779326}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4472568137473338}
+  - {fileID: 4587259418987898}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23076675093677192
+--- !u!23 &23038403299307252
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1303393316945826}
+  m_GameObject: {fileID: 1307889566020696}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -105,19 +105,19 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &33439009228716594
+--- !u!33 &33605867803901146
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1303393316945826}
-  m_Mesh: {fileID: 4300000, guid: e2878f06c41cbf84ea66717951fdec6b, type: 3}
---- !u!64 &64339971648850592
+  m_GameObject: {fileID: 1307889566020696}
+  m_Mesh: {fileID: 4300000, guid: de0049b6aa6f358499f5d8f686a0a874, type: 3}
+--- !u!64 &64977781580362450
 MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1303393316945826}
+  m_GameObject: {fileID: 1307889566020696}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -125,13 +125,13 @@ MeshCollider:
   m_Convex: 0
   m_InflateMesh: 0
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: e2878f06c41cbf84ea66717951fdec6b, type: 3}
---- !u!114 &114770015149374062
+  m_Mesh: {fileID: 4300000, guid: de0049b6aa6f358499f5d8f686a0a874, type: 3}
+--- !u!114 &114769886044736698
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1678635162641054}
+  m_GameObject: {fileID: 1074800409779326}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb495d94f3456744d9147310062e7778, type: 3}

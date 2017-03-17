@@ -187,7 +187,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 27
           m_FloatArgument: 0
-          m_StringArgument: bedassets.IKEABeddingeSofaBedFrame3D
+          m_StringArgument: bedassets,IKEABeddingeSofaBedFrame3D
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -497,7 +497,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 14
           m_FloatArgument: 0
-          m_StringArgument: tableassets,IKEAGustavDesk
+          m_StringArgument: tableassets,IkeaGustavDesk
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -1197,7 +1197,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 17
           m_FloatArgument: 0
-          m_StringArgument: tableassets,IKEAVikaManneTable
+          m_StringArgument: tableassets,IkeaVikaManneTable
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -1507,7 +1507,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 30
           m_FloatArgument: 0
-          m_StringArgument: lightassets,IKEAAntifoniWorkLamp
+          m_StringArgument: lightassets,IkeaAntifoniWorkLamp
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -2463,7 +2463,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 29
           m_FloatArgument: 0
-          m_StringArgument: bedassets,IKEASorumQueenBedFrame
+          m_StringArgument: bedassets,IkeaSorumQueenBedFrame
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -2664,48 +2664,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 805107087}
---- !u!1001 &808659088
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4113908280655404, guid: fea66d200d648104fafce67bfd282bc5, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4113908280655404, guid: fea66d200d648104fafce67bfd282bc5, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4113908280655404, guid: fea66d200d648104fafce67bfd282bc5, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4113908280655404, guid: fea66d200d648104fafce67bfd282bc5, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4113908280655404, guid: fea66d200d648104fafce67bfd282bc5, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4113908280655404, guid: fea66d200d648104fafce67bfd282bc5, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4113908280655404, guid: fea66d200d648104fafce67bfd282bc5, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4113908280655404, guid: fea66d200d648104fafce67bfd282bc5, type: 2}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: fea66d200d648104fafce67bfd282bc5, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &824956316
 GameObject:
   m_ObjectHideFlags: 0
@@ -2802,7 +2760,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 23
           m_FloatArgument: 0
-          m_StringArgument: sofaassets,IKEASolsta2SeatsSofa
+          m_StringArgument: sofaassets,IkeaSolsta2SeatsSofa
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -2869,46 +2827,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chairList:
-  - {fileID: 1968190437193822, guid: fea66d200d648104fafce67bfd282bc5, type: 2}
-  - {fileID: 1684783089520530, guid: 91a43a4e90013f74b9afcf25e9765140, type: 2}
-  - {fileID: 1068243669047596, guid: 5008bcc948e4f36479be718b0be8faf6, type: 2}
-  - {fileID: 1836203322493582, guid: 45de63b3df129cf42bcb5b16cb13a461, type: 2}
-  - {fileID: 1080174676299006, guid: b44c4d1134996d1489ebe1a73245bc0a, type: 2}
-  - {fileID: 1678635162641054, guid: d338cf02f7356a44aac4c15563baceda, type: 2}
-  - {fileID: 1780510705407234, guid: 9b24bb9151c85644a87f04a7715c2d3e, type: 2}
+  - {fileID: 1185698894344300, guid: fea66d200d648104fafce67bfd282bc5, type: 2}
+  - {fileID: 1337846294926894, guid: 9929baff87192c245aca48e61a9c8a17, type: 2}
+  - {fileID: 1482873603377378, guid: 4a7850939565eda4190dc49a195a5077, type: 2}
+  - {fileID: 1249010599203686, guid: 31a1c149edbbb994ebf6494c863f25a5, type: 2}
+  - {fileID: 1408470981017356, guid: c8f6ef7cc1365c943aaf72a80723ff48, type: 2}
+  - {fileID: 1074800409779326, guid: a26ea0eb913520e4da3c1dd8066c74c7, type: 2}
+  - {fileID: 1802353514105328, guid: 9b24bb9151c85644a87f04a7715c2d3e, type: 2}
   drawerList:
-  - {fileID: 1493171865298228, guid: 7033931b41d2f9d438ec5068b51b4ea2, type: 2}
-  - {fileID: 1766876581336530, guid: 0b2c55360d52ae74f88f8767bbcf68de, type: 2}
-  - {fileID: 1126853342197534, guid: d51a2219cfc591c4ea0d22166b74a5ab, type: 2}
+  - {fileID: 1322523350096402, guid: 7033931b41d2f9d438ec5068b51b4ea2, type: 2}
+  - {fileID: 1602040385860794, guid: 0b2c55360d52ae74f88f8767bbcf68de, type: 2}
+  - {fileID: 1988413274864882, guid: c3f8dd6b9fe695f4db8ce822bd1477a9, type: 2}
   - {fileID: 1402382249197218, guid: 5acdeb427d2385e41a5ecedad673a9d9, type: 2}
   tableList:
-  - {fileID: 1084497806604282, guid: 234d2f06ccc68fd41862e669136febc9, type: 2}
-  - {fileID: 1559756145349952, guid: 81ace43af13c327439489cc705877c55, type: 2}
-  - {fileID: 1160480562332450, guid: 0674f55dee01dec4cb0428fb1902dfa0, type: 2}
-  - {fileID: 1320917495438552, guid: b965bfa3a8c971c45b2fe3fee4750435, type: 2}
-  - {fileID: 1421969219657886, guid: 16e8d389723b8e2448ed15867f20875c, type: 2}
-  - {fileID: 1952316637194736, guid: f9b9c26f6f23f254b9b2355b4f970996, type: 2}
-  - {fileID: 1847642752011772, guid: af009d9e85f4ec2469fd9efb83528fc6, type: 2}
+  - {fileID: 1515221593789954, guid: 234d2f06ccc68fd41862e669136febc9, type: 2}
+  - {fileID: 1222478279946808, guid: 81ace43af13c327439489cc705877c55, type: 2}
+  - {fileID: 1818594347580592, guid: 0674f55dee01dec4cb0428fb1902dfa0, type: 2}
+  - {fileID: 1083693894709410, guid: b965bfa3a8c971c45b2fe3fee4750435, type: 2}
+  - {fileID: 1498462072756386, guid: 16e8d389723b8e2448ed15867f20875c, type: 2}
+  - {fileID: 1535734921982430, guid: f9b9c26f6f23f254b9b2355b4f970996, type: 2}
+  - {fileID: 1670906036159148, guid: af009d9e85f4ec2469fd9efb83528fc6, type: 2}
   sofaList:
-  - {fileID: 1452224007081518, guid: c30a82d791af34646bbac413c3e47cc7, type: 2}
-  - {fileID: 1041142508211992, guid: 780055032e8f7cc4ebbd38c0be3ed5a8, type: 2}
-  - {fileID: 1596608355611036, guid: 3844c6fa7df2b684894ca2120b09acd4, type: 2}
-  - {fileID: 1178587059377472, guid: 81767d2b81ca8f8499de50fe83f58ebc, type: 2}
-  - {fileID: 1603646209212604, guid: 5bd85d1fa8113de4d878d4939b18e0d2, type: 2}
-  - {fileID: 1282072643732052, guid: b743fc6e8857b15428402884ee608ab0, type: 2}
-  - {fileID: 1235102631944540, guid: d2ffb9a1ec0526a4787a2bb6fb6cd523, type: 2}
+  - {fileID: 1706364546640838, guid: c30a82d791af34646bbac413c3e47cc7, type: 2}
+  - {fileID: 1490193975714432, guid: 780055032e8f7cc4ebbd38c0be3ed5a8, type: 2}
+  - {fileID: 1993920142016354, guid: 3844c6fa7df2b684894ca2120b09acd4, type: 2}
+  - {fileID: 1271830009128178, guid: 81767d2b81ca8f8499de50fe83f58ebc, type: 2}
+  - {fileID: 1792360347882000, guid: 5bd85d1fa8113de4d878d4939b18e0d2, type: 2}
+  - {fileID: 1163600869260244, guid: b743fc6e8857b15428402884ee608ab0, type: 2}
+  - {fileID: 1109310705878186, guid: d2ffb9a1ec0526a4787a2bb6fb6cd523, type: 2}
   bedList:
-  - {fileID: 1611694082765830, guid: b9a0b56fc44f58249a910d3551199210, type: 2}
-  - {fileID: 1504047441739812, guid: fe79b1514dbfa104d86a0fbc54b7438f, type: 2}
-  - {fileID: 1131132497681884, guid: 6a551ebc890ac5c4983c80578cf05456, type: 2}
+  - {fileID: 1403283760115268, guid: b9a0b56fc44f58249a910d3551199210, type: 2}
+  - {fileID: 1359469831979868, guid: fe79b1514dbfa104d86a0fbc54b7438f, type: 2}
+  - {fileID: 1257840894949102, guid: 6a551ebc890ac5c4983c80578cf05456, type: 2}
   storageList:
   - {fileID: 1117053994477656, guid: 87dedc7887c04fb43b18882d53c5f731, type: 2}
-  - {fileID: 1802898113664432, guid: 76d561ab53317d443b3f57fde7b64dae, type: 2}
+  - {fileID: 1518723031798452, guid: 76d561ab53317d443b3f57fde7b64dae, type: 2}
   lightsList:
-  - {fileID: 1030834611788630, guid: 08695ad63bc2cf940a4f6a0cfc01c65a, type: 2}
+  - {fileID: 1993920252032350, guid: 08695ad63bc2cf940a4f6a0cfc01c65a, type: 2}
   - {fileID: 1450096338782460, guid: 252af1614e98abb44b3260174c08aa1e, type: 2}
-  - {fileID: 1386185519128080, guid: 8873fd485a27ff344b58601fdf66ac0e, type: 2}
-  - {fileID: 1641201745811508, guid: 391050480b488fb4aac3066839dc5079, type: 2}
+  - {fileID: 1310913779709326, guid: 8873fd485a27ff344b58601fdf66ac0e, type: 2}
+  - {fileID: 1561908257458954, guid: 391050480b488fb4aac3066839dc5079, type: 2}
 --- !u!4 &829800825
 Transform:
   m_ObjectHideFlags: 0
@@ -2920,7 +2878,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &829800826
 MonoBehaviour:
@@ -3451,7 +3409,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 33
           m_FloatArgument: 0
-          m_StringArgument: lightassets,IKEADipodiFloorLamp
+          m_StringArgument: lightassets,IkeaDipodiFloorLamp
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -3585,7 +3543,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 12
           m_FloatArgument: 0
-          m_StringArgument: tableassets,IKEAFornbroPedestalTable
+          m_StringArgument: tableassets,IkeaFornbroPedestalTable
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -3719,7 +3677,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 19
           m_FloatArgument: 0
-          m_StringArgument: storageassets,IKEALaxvikShelving
+          m_StringArgument: storageassets,IkeaLaxvikShelving
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -5151,7 +5109,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 20
           m_FloatArgument: 0
-          m_StringArgument: sofaassets,IKEAArild2SeatSofa
+          m_StringArgument: sofaassets,IkeaArild2SeatSofa
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -5368,7 +5326,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 15
           m_FloatArgument: 0
-          m_StringArgument: tableassets,IKEAHEMNESCoffeeTableBrown
+          m_StringArgument: tableassets,IkeaHemnesCoffeeTableBrown
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -5502,7 +5460,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 16
           m_FloatArgument: 0
-          m_StringArgument: tableassets,IKEALackBlackTable
+          m_StringArgument: tableassets,IkeaLackBlackTable
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -6261,7 +6219,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 25
           m_FloatArgument: 0
-          m_StringArgument: sofaassets,IKEATylosandCornerSofa
+          m_StringArgument: sofaassets,IkeaTylosandCornerSofa
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -6395,7 +6353,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 21
           m_FloatArgument: 0
-          m_StringArgument: sofaaassets,IKEAExarby3SeatsSofa
+          m_StringArgument: sofaaassets,IkeaExarby3SeatsSofa
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -6839,7 +6797,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 18
           m_FloatArgument: 0
-          m_StringArgument: storageassets,IKEABILLYBookcase
+          m_StringArgument: storageassets,IkeaBillyBookcase
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -7358,7 +7316,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 24
           m_FloatArgument: 0
-          m_StringArgument: sofaassets,IKEATullstaArmchair
+          m_StringArgument: sofaassets,IkeaTullstaArmchair
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
