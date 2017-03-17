@@ -62,9 +62,8 @@ public class TapToPlaceParent : MonoBehaviour
             {
                 belowGround = true;
             }
-            print(angleFromHor);
-
-            print(belowGround);
+            //print(angleFromHor);
+            //print(belowGround);
 
             if(!isWall() && !isCeiling() && (angleFromHor < minDepressionAngle || !belowGround))
             {

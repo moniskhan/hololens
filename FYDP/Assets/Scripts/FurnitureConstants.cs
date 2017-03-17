@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FurnitureMetadata
+[System.Serializable]
+public class FurnitureMetadata : System.Object
 {
     public string name { get; set;  }
     public string bundle { get; set; }
+    public GameObject gameObject { get; set; }
 }
 
-public static class FurnitureConstants {
+public static class FurnitureConstants
+{
 
     public static bool FETCH_MODELS = false;
 

@@ -45,6 +45,7 @@ FYDP/UWP/*
 FYDP/Assembly-CSharp.csproj
 FYDP/Origami.sln
 FYDP/desktop.ini
+FYDP/AssetBundles/*
 
 # OS generated
 .DS_Store
