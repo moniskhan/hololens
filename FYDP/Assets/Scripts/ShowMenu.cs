@@ -59,6 +59,9 @@ public class ShowMenu : MonoBehaviour
             toQuat.z = 0;
             menuObject.rotation = toQuat;
            
+        } else
+        {
+            ShowSecondaryMenu.Instance.CloseMenu();
         }
     }
 
