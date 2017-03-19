@@ -92,3 +92,44 @@ MonoBehaviour:
   - {fileID: 1198865825809876, guid: e0f023bc9c3914f4784f53be9068c8ba, type: 2}
   - {fileID: 1098925942620140, guid: db1b8d6c416b22f4f8638d8ad59edc57, type: 2}
   - {fileID: 1198580445475574, guid: ec0c25640153c2744b0d02576170f3d2, type: 2}
+  chairSprites:
+  - {fileID: 21300000, guid: d9d79f18dc520ac4381904477a9ed402, type: 3}
+  - {fileID: 21300000, guid: 49a5edc4bb45e8b439ab7a345024e70a, type: 3}
+  - {fileID: 21300000, guid: d53591662eaecad4eb20f853f0593751, type: 3}
+  - {fileID: 21300000, guid: c4b0b7cee6cff3b4091bf9dcd5de318c, type: 3}
+  - {fileID: 21300000, guid: fdd571f10c044514480297a1317ff404, type: 3}
+  - {fileID: 21300000, guid: 2378490ebb7e0b040a96a0960be35bd6, type: 3}
+  - {fileID: 21300000, guid: 819d4d83a35efd04d8f00c2ae308322b, type: 3}
+  tableSprites:
+  - {fileID: 21300000, guid: 0b3ab75bb524c5842b5400162c229d83, type: 3}
+  - {fileID: 21300000, guid: 15d221522f06bd349943bf836b571995, type: 3}
+  - {fileID: 21300000, guid: 12a43fd1965a99848a64e7947b16454e, type: 3}
+  - {fileID: 21300000, guid: 8a3cc295552567245b2970002778ccaa, type: 3}
+  - {fileID: 21300000, guid: bc31c4158a784534c89c534daf0fbe23, type: 3}
+  - {fileID: 21300000, guid: 4100b23a8a3c8a640a248d994701b01b, type: 3}
+  - {fileID: 21300000, guid: 407c9f9a3f163554e8d8b6b3e35bd240, type: 3}
+  sofaSprites:
+  - {fileID: 21300000, guid: 74b95a9066a95e04d8e54f5123e9f7be, type: 3}
+  - {fileID: 21300000, guid: 41722a132a92ad84f99021ce06a024b8, type: 3}
+  - {fileID: 21300000, guid: b2ca33068ae113f4ca5fb2e6b50c9aaf, type: 3}
+  - {fileID: 21300000, guid: ee22eaedb0cebce499472194727062d2, type: 3}
+  - {fileID: 21300000, guid: 1264f1afe3cd1324ea495e420ef9aee4, type: 3}
+  - {fileID: 21300000, guid: 23437e2884c25a14994589adc58a8938, type: 3}
+  - {fileID: 21300000, guid: 8bfae0c349a43194ca0a98fd36668627, type: 3}
+  storageSprites:
+  - {fileID: 21300000, guid: 4f6f542a13d58004ca318f4b52e8e625, type: 3}
+  - {fileID: 21300000, guid: 8242a6f1d86a43f46a628c6a52f51e6e, type: 3}
+  drawerSprites:
+  - {fileID: 21300000, guid: e933f2ac1a7abe1498b55d52fa15d9c8, type: 3}
+  - {fileID: 21300000, guid: cc0a4e36afcdee34d8b5ff76e42038f4, type: 3}
+  - {fileID: 21300000, guid: 048ba08e1ea7fb041829dc9569e053d2, type: 3}
+  - {fileID: 21300000, guid: 32760103c755cea47a69edd2eeed54cc, type: 3}
+  lightSpritess:
+  - {fileID: 21300000, guid: 143e2a9344e27c84fb94b621bbde2f76, type: 3}
+  - {fileID: 21300000, guid: 289bea2f034150447bfcf82e15980c2b, type: 3}
+  - {fileID: 21300000, guid: 10072783cad1d5d4fbf86b1b7d213cfd, type: 3}
+  - {fileID: 21300000, guid: 3f0aa57b2d94adf4285b20d25b133c2c, type: 3}
+  bedSprites:
+  - {fileID: 21300000, guid: b99a437c3e11c4542a5d003c5dbd22dd, type: 3}
+  - {fileID: 21300000, guid: 0063ec1c6ebb0d54f97c97405cd1e174, type: 3}
+  - {fileID: 21300000, guid: 190c06d98a7258a4bb1330aed43d8b7c, type: 3}

@@ -9,13 +9,8 @@ public class AssetLoader : MonoBehaviour {
     bool isRemote = false;
     List<GameObject> furntiureInstances = new List<GameObject>();
 
-    public void onLoadAssetClick(string assetName)
+    public void onLoadAssetClick(string bundle, string name)
     {
-        Debug.Log("Loading asset " + assetName);
-        string[] assetParts = assetName.Split(',');
-        string bundle = assetParts[0];
-        string name = assetParts[1];
-
         if (isRemote == false)
         {
             loadFromDisk(bundle, name);
@@ -28,12 +23,20 @@ public class AssetLoader : MonoBehaviour {
 
     public void clearFurniture()
     {
-        foreach (GameObject f in furntiureInstances)
+        if (!isRemote)
         {
-            f.SetActive(false);
-            Destroy(f);
+            foreach (GameObject f in furntiureInstances)
+            {
+                f.SetActive(false);
+                Destroy(f);
+            }
+            furntiureInstances.Clear();
         }
-        furntiureInstances.Clear();
+        else
+        {
+            this.GetComponent<AssetManager>().clearFurnitureAssets();
+        }
+
     }
 
     private void loadFromDisk(string bundle, string name)

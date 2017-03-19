@@ -79,6 +79,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\AssetDatabase\SpawnList.cs" />
+    <Compile Include="Assets\AssetDatabase\menu\CategoryMenuLoader.cs" />
+    <Compile Include="Assets\AssetDatabase\menu\FurnitureMenuItemProperty.cs" />
+    <Compile Include="Assets\AssetDatabase\menu\FurnitureProperty.cs" />
     <Compile Include="Assets\Holograms\Support\AniCrane\AnimationSpeed.cs" />
     <Compile Include="Assets\Holograms\Support\Fitbox\Fitbox.cs" />
     <Compile Include="Assets\Holograms\Support\Fitbox\Interpolator.cs" />
@@ -113,6 +116,8 @@
     <Compile Include="Assets\Scripts\assetBundle\AssetBundleLoader.cs" />
     <Compile Include="Assets\Scripts\debugapp\AssetEvents.cs" />
     <Compile Include="Assets\Scripts\debugapp\AssetLoader.cs" />
+    <Compile Include="Assets\Scripts\debugapp\DetailsPage.cs" />
+    <Compile Include="Assets\Scripts\debugapp\MenuManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\DebugNormals.shader" />
