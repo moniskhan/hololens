@@ -44,12 +44,14 @@ public class CategoryMenuLoader : MonoBehaviour
         {
             if (i < Math.Min(furnitures.Count, (currentIndex + 1) * pageSize))
             {
+                Debug.Log("at i: " + i);
                 furnitureBtn.SetActive(true);
                 GameObject f = furnitures[i];
                 FurnitureProperty properties = spawnList.findAssetProperties(category, f.name);
                 furnitureBtn.GetComponent<FurnitureMenuItemProperty>().furnitureProperty.bundle = properties.bundle;
                 furnitureBtn.GetComponent<FurnitureMenuItemProperty>().furnitureProperty.assetName = properties.assetName;
                 furnitureBtn.GetComponent<FurnitureMenuItemProperty>().furnitureProperty.furnitureType = properties.furnitureType;
+                furnitureBtn.GetComponent<FurnitureMenuItemProperty>().index = i;
                 furnitureBtn.GetComponent<Image>().sprite = spawnList.findAssetIcon(category, i);
                 i++;
             }
@@ -59,7 +61,7 @@ public class CategoryMenuLoader : MonoBehaviour
             }
         }
 
-        if (furnitures.Count / pageSize == 0)
+        if (furnitures.Count <= pageSize)
         {
             forward.SetActive(false);
             backward.SetActive(false);

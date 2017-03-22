@@ -9,12 +9,14 @@ public class DetailsPage : MonoBehaviour {
     public GameObject description;
     public GameObject picture;
     public GameObject okBtn;
+    public GameObject spawner;
 
 	public void populate(FurnitureMenuItemProperty item)
     {
         okBtn.GetComponent<FurnitureMenuItemProperty>().furnitureProperty = item.furnitureProperty;
         title.GetComponent<Text>().text = item.furnitureProperty.assetName;
         description.GetComponent<Text>().text = item.furnitureProperty.bundle;
+        picture.GetComponent<Image>().sprite = spawner.GetComponent<SpawnList>().findAssetIcon(item.furnitureProperty.bundle, item.index);
     }
 
 }

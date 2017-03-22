@@ -13,5 +13,8 @@ public class FurnitureProperty {
     public string bundle;
     public string assetName;
 
+    public string title;
+    public string description;
+
     public FurnitureType furnitureType;
 }
