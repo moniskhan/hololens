@@ -15,6 +15,8 @@ public class CategoryMenuLoader : MonoBehaviour
     public GameObject backward;
     public int pageSize;
 
+    public GameObject titleLabel;
+
     private List<GameObject> furnitures;
 
     private Dictionary<string, int> pageHistory = new Dictionary<string, int>();
@@ -23,6 +25,9 @@ public class CategoryMenuLoader : MonoBehaviour
     public void LoadList(string category)
     {
         currentCategory = category;
+        // set title
+        titleLabel.GetComponent<Text>().text = currentCategory;
+
         SpawnList spawnList = spawner.GetComponent<SpawnList>();
         furnitures = spawnList.findBundle(category);
 

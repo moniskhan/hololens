@@ -47,7 +47,8 @@ public class AssetLoader : MonoBehaviour {
         if (furniture != null)
         {
             GameObject furnitureInstance = Instantiate(furniture, position, Quaternion.identity);
-            furnitureInstance.AddComponent<TapToPlaceParent>();
+            //furnitureInstance.AddComponent<TapToPlaceParent>();
+            furnitureInstance.AddComponent<TapToPlace>();
             furnitureInstance.SetActive(true);
             furntiureInstances.Add(furnitureInstance);
         }

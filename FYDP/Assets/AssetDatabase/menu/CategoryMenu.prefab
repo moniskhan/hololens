@@ -1013,9 +1013,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 851b2ab501114d94790a141c80e0135d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
   furnitureProperty:
     bundle: 
     assetName: 
+    title: 
+    description: 
     furnitureType: 0
 --- !u!114 &114011288944738342
 MonoBehaviour:
@@ -1028,9 +1031,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 851b2ab501114d94790a141c80e0135d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
   furnitureProperty:
     bundle: 
     assetName: 
+    title: 
+    description: 
     furnitureType: 0
 --- !u!114 &114035525742560694
 MonoBehaviour:
@@ -1247,9 +1253,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 851b2ab501114d94790a141c80e0135d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
   furnitureProperty:
     bundle: 
     assetName: 
+    title: 
+    description: 
     furnitureType: 0
 --- !u!114 &114089691273369096
 MonoBehaviour:
@@ -1363,9 +1372,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 851b2ab501114d94790a141c80e0135d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
   furnitureProperty:
     bundle: 
     assetName: 
+    title: 
+    description: 
     furnitureType: 0
 --- !u!114 &114180139525519266
 MonoBehaviour:
@@ -1419,9 +1431,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 851b2ab501114d94790a141c80e0135d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
   furnitureProperty:
     bundle: 
     assetName: 
+    title: 
+    description: 
     furnitureType: 0
 --- !u!114 &114213782554296362
 MonoBehaviour:
@@ -1502,9 +1517,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 851b2ab501114d94790a141c80e0135d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
   furnitureProperty:
     bundle: 
     assetName: 
+    title: 
+    description: 
     furnitureType: 0
 --- !u!114 &114257379964594286
 MonoBehaviour:
@@ -2040,9 +2058,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 851b2ab501114d94790a141c80e0135d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
   furnitureProperty:
     bundle: 
     assetName: 
+    title: 
+    description: 
     furnitureType: 0
 --- !u!114 &114519376153132910
 MonoBehaviour:
@@ -2307,9 +2328,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 851b2ab501114d94790a141c80e0135d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
   furnitureProperty:
     bundle: 
     assetName: 
+    title: 
+    description: 
     furnitureType: 0
 --- !u!114 &114664921115221300
 MonoBehaviour:
@@ -2322,9 +2346,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 851b2ab501114d94790a141c80e0135d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
   furnitureProperty:
     bundle: 
     assetName: 
+    title: 
+    description: 
     furnitureType: 0
 --- !u!114 &114672719834068096
 MonoBehaviour:
@@ -2658,9 +2685,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 851b2ab501114d94790a141c80e0135d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
   furnitureProperty:
     bundle: 
     assetName: 
+    title: 
+    description: 
     furnitureType: 0
 --- !u!114 &114815689533022604
 MonoBehaviour:
@@ -2706,9 +2736,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 851b2ab501114d94790a141c80e0135d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
   furnitureProperty:
     bundle: 
     assetName: 
+    title: 
+    description: 
     furnitureType: 0
 --- !u!114 &114835043985128092
 MonoBehaviour:
@@ -2882,9 +2915,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 851b2ab501114d94790a141c80e0135d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
   furnitureProperty:
     bundle: 
     assetName: 
+    title: 
+    description: 
     furnitureType: 0
 --- !u!114 &114954892747197874
 MonoBehaviour:

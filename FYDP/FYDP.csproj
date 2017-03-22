@@ -118,6 +118,7 @@
     <Compile Include="Assets\Scripts\debugapp\AssetLoader.cs" />
     <Compile Include="Assets\Scripts\debugapp\DetailsPage.cs" />
     <Compile Include="Assets\Scripts\debugapp\MenuManager.cs" />
+    <Compile Include="Assets\Scripts\debugapp\TapToPlace.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\DebugNormals.shader" />
