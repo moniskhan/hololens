@@ -11,7 +11,14 @@ public class GazeGestureManager : MonoBehaviour
     public bool IsNavigating { get; private set; }
     public Vector3 NavigationPosition { get; private set; }
 
+    private GazeStabilizer gazeStabilizer;
+
     GestureRecognizer recognizer;
+
+    void Awake()
+    {
+        gazeStabilizer = GetComponent<GazeStabilizer>();
+    }
 
     // Use this for initialization
     void Start()
@@ -100,6 +107,12 @@ public class GazeGestureManager : MonoBehaviour
         // head position and orientation.
         var headPosition = Camera.main.transform.position;
         var gazeDirection = Camera.main.transform.forward;
+
+        if (gazeStabilizer != null)
+        {
+            gazeStabilizer.UpdateHeadStability(headPosition, Camera.main.transform.rotation);
+            headPosition = gazeStabilizer.StableHeadPosition;
+        }
 
         RaycastHit hitInfo;
         if (Physics.Raycast(headPosition, gazeDirection, out hitInfo))

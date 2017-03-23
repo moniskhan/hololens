@@ -14,8 +14,8 @@ public class DetailsPage : MonoBehaviour {
 	public void populate(FurnitureMenuItemProperty item)
     {
         okBtn.GetComponent<FurnitureMenuItemProperty>().furnitureProperty = item.furnitureProperty;
-        title.GetComponent<Text>().text = item.furnitureProperty.assetName;
-        description.GetComponent<Text>().text = item.furnitureProperty.bundle;
+        title.GetComponent<Text>().text = item.furnitureProperty.title;
+        description.GetComponent<Text>().text = item.furnitureProperty.description;
         picture.GetComponent<Image>().sprite = spawner.GetComponent<SpawnList>().findAssetIcon(item.furnitureProperty.bundle, item.index);
     }
 

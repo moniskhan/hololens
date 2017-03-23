@@ -24,11 +24,12 @@ public class CategoryMenuLoader : MonoBehaviour
 
     public void LoadList(string category)
     {
+        SpawnList spawnList = spawner.GetComponent<SpawnList>();
+
         currentCategory = category;
         // set title
-        titleLabel.GetComponent<Text>().text = currentCategory;
+        titleLabel.GetComponent<Text>().text = spawnList.getCategoryTitle(currentCategory);
 
-        SpawnList spawnList = spawner.GetComponent<SpawnList>();
         furnitures = spawnList.findBundle(category);
 
         int currentIndex = 0;
@@ -56,6 +57,8 @@ public class CategoryMenuLoader : MonoBehaviour
                 furnitureBtn.GetComponent<FurnitureMenuItemProperty>().furnitureProperty.bundle = properties.bundle;
                 furnitureBtn.GetComponent<FurnitureMenuItemProperty>().furnitureProperty.assetName = properties.assetName;
                 furnitureBtn.GetComponent<FurnitureMenuItemProperty>().furnitureProperty.furnitureType = properties.furnitureType;
+                furnitureBtn.GetComponent<FurnitureMenuItemProperty>().furnitureProperty.title = properties.title;
+                furnitureBtn.GetComponent<FurnitureMenuItemProperty>().furnitureProperty.description = properties.description;
                 furnitureBtn.GetComponent<FurnitureMenuItemProperty>().index = i;
                 furnitureBtn.GetComponent<Image>().sprite = spawnList.findAssetIcon(category, i);
                 i++;
@@ -76,7 +79,7 @@ public class CategoryMenuLoader : MonoBehaviour
             forward.SetActive(true);
             backward.SetActive(false);
         }
-        else if (currentIndex >= furnitures.Count / pageSize)
+        else if ((furnitures.Count - currentIndex * pageSize) <= pageSize)
         {
             forward.SetActive(false);
             backward.SetActive(true);
