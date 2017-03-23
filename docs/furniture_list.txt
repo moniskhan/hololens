@@ -1,0 +1,169 @@
+
+part1)))))))))))))))))))))))))))))))))))))))))))))
+
+chairs:
+chair2: https://www.polantis.com/ikea/jules-swivel-chair
+chair3: https://www.polantis.com/ikea/ingolf-chair-with-armrest
+chair4: https://www.polantis.com/ikea/gilbert-chair
+
+deskchair:
+chair1: https://www.polantis.com/ikea/fritz-chair
+chair5: https://www.polantis.com/ikea/klappe-chair
+chair7: https://www.polantis.com/ikea/skruvsta-swivel-chair
+
+stool:
+chair6: https://www.polantis.com/ikea/forsby-small-stool
+
+-------------------------------------------------------------------------
+
+sofa:
+sofa1: https://www.polantis.com/ikea/arild-2-seat-sofa
+sofa2: https://www.polantis.com/ikea/kipplan-2-seat-sofa
+sofa3: https://www.polantis.com/ikea/vreta-3-seat-sofa-mjuk-ivory
+sofa4: https://www.polantis.com/ikea/exarby-3-seats-sofa
+sofa5: https://www.polantis.com/ikea/tylosand-corner-sofa
+sofa6: https://www.polantis.com/ikea/solsta-2-seats-sofa
+
+sofa-single:
+sofa7: https://www.polantis.com/ikea/tullsta-armchair
+
+
+-------------------------------------------------------------------------
+table:
+table1: https://www.polantis.com/ikea/grimle-table-and-5-chairs
+table2: https://www.polantis.com/ikea/bjursta-table-and-roger-chairs
+table5:
+
+shortable:
+table3: https://www.polantis.com/ikea/lack-black-table
+
+roundtable:
+table4: https://www.polantis.com/ikea/fornbro-pedestal-table
+
+studytable:
+table 7: https://www.polantis.com/ikea/gustav-desk
+
+https://www.polantis.com/ikea/vika-manne-table
+
+https://www.polantis.com/ikea/hemnes-coffee-table-brown
+
+
+
+-------------------------------------------------------------------------
+drawer:
+drawer1: https://www.polantis.com/ikea/alex-drawer-white
+drawer2: https://www.polantis.com/ikea/hemnes-chest-of-3-drawers
+drawer3: https://www.polantis.com/ikea/anes-chest-of-2-drawers-brich-veneer
+drawer4: https://www.polantis.com/ikea/besta-storage-combination-with-doors-drawers
+
+-------------------------------------------------------------------------
+light:
+light1:  https://www.polantis.com/ikea/antifoni-work-lamp
+light2: https://www.polantis.com/ikea/basisk-pendant-lamp
+light3: https://www.polantis.com/ikea/basisk-table-lamp
+light4: https://www.polantis.com/ikea/dipodi-floor-lamp
+
+-----------------------------------------------------------------------------
+bed:
+bed1: https://www.polantis.com/ikea/heimdal-bed-160x200
+bed2: https://www.polantis.com/ikea/heimdal-bed-160x200
+bed3: https://www.polantis.com/ikea/hemnes-single-bed-frame-small
+
+-----------------------------------------------------------------------------
+stroage
+storage1: https://www.polantis.com/ikea/laxvik-shelving
+storage2: https://www.polantis.com/ikea/billy-bookcase
+
+
+part2)))))))))))))))))))))))))))))))))))))))))))))
+
+
+arm chairs
+-----------------------------------------------------------------------------
+https://www.polantis.com/ikea/emmabo-rocking-chair
+https://www.polantis.com/ikea/poang-armchair
+https://www.polantis.com/ikea/grankulla-futon-armchair
+https://www.polantis.com/ikea/karlskrona-lounger-chair
+https://www.polantis.com/ikea/vibbyn-armchair
+https://www.polantis.com/ikea/gullholmen-rocking-chair
+
+
+regular chair
+-----------------------------------------------------------------------------
+https://www.polantis.com/ikea/ikea-herman-chair
+https://www.polantis.com/ikea/allak-swivel-chair
+https://www.polantis.com/ikea/sevnning-desk-chair
+https://www.polantis.com/ikea/snille-swivel-chair
+
+https://www.polantis.com/mirima/tabouret-pub-dossier-plexi
+https://www.polantis.com/mirima/tabouret-roma
+https://www.polantis.com/mirima/tabouret-haut-nubo
+https://www.polantis.com/mirima/tabouret-tracteur
+
+coffee table
+-----------------------------------------------------------------------------
+https://www.polantis.com/ikea/bankas-coffe-table
+https://www.polantis.com/ikea/dalfors-coffee-table
+https://www.polantis.com/ikea/granas-coffee-table
+https://www.polantis.com/ikea/isala-coffee-table
+https://www.polantis.com/ikea/klubbo-coffee-table
+https://www.polantis.com/ikea/lack-side-table-wood
+https://www.polantis.com/ikea/strind-side-table-round
+https://www.polantis.com/ikea/tofteryd-coffe-table
+
+sofa
+-----------------------------------------------------------------------------
+https://www.polantis.com/ikea/beddinge-sofa-bed
+https://www.polantis.com/ikea/fothult-2-seat-sofa
+https://www.polantis.com/ikea/ektorp-armchair-vallsta
+
+storage
+-----------------------------------------------------------------------------
+https://www.polantis.com/ikea/metod-wall-cab-horizontal-with-2-glass-doors-white-jutis-frosted-glass
+https://www.polantis.com/ikea/anes-chest-of-4-drawers
+https://www.polantis.com/ikea/besta-bench-with-legs
+https://www.polantis.com/ikea/besta-storage-combination-with-doors-black
+https://www.polantis.com/ikea/besta-storage-unit-white
+https://www.polantis.com/ikea/glass-door-cabinet-with-four-drawers
+https://www.polantis.com/ikea/erik-drawer-lockable
+https://www.polantis.com/ikea/songa-storage
+https://www.polantis.com/ikea/songa-wall-shelf
+
+other
+-----------------------------------------------------------------------------
+https://www.polantis.com/ikea/hol-side-table-basket
+
+
+light
+-----------------------------------------------------------------------------
+https://www.polantis.com/ikea/kroby-lampadaire
+https://www.polantis.com/ikea/kroby-lampadaire-variante-2
+https://www.polantis.com/ikea/kvart-lampadaire
+https://www.polantis.com/ikea/kvart-lampadaire-avec-3-spots
+https://www.polantis.com/ikea/minut-lampadaire
+https://www.polantis.com/ikea/not-lampadaire
+https://www.polantis.com/ikea/not-lampadaire-variante-2
+
+bed
+-----------------------------------------------------------------------------
+https://www.polantis.com/ikea/beddinge-sofa-bed-frame
+
+outdoor
+-----------------------------------------------------------------------------
+https://www.polantis.com/souvignetdesign/chaise-ds-no-1-acier-brosse
+https://www.polantis.com/polantis/passion
+
+
+kitchen
+-----------------------------------------------------------------------------
+https://www.polantis.com/polantis/oven-03
+https://www.polantis.com/polantis/microwave
+
+bathroom
+-----------------------------------------------------------------------------
+https://www.polantis.com/polantis/bassin
+
+table
+-----------------------------------------------------------------------------
+https://www.polantis.com/mirima/table-haute-nubo
+
