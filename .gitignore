@@ -36,6 +36,9 @@ Origami/Library/*
 *.opendb
 *.pdb
 
+*.ini.meta
+desktop.ini
+
 FYDP/.vs/*
 FYDP/App/*
 FYDP/Library/*
