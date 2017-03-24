@@ -17,6 +17,17 @@ public class TapToPlace : MonoBehaviour
         MenuManager.Instance.CancelClick();
         // On each Select gesture, toggle whether the user is in placing mode.
         placing = !placing;
+        if (placing)
+        {
+            GazeGestureManager.Instance.PlacingObject = this;
+        }
+        GazeGestureManager.Instance.placingActive = placing;
+    }
+
+    void onFurnitureDrop()
+    {
+        placing = false;
+        GazeGestureManager.Instance.placingActive = false;
     }
 
     void OnRotateStart()

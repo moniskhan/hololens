@@ -7,9 +7,10 @@ public class GazeGestureManager : MonoBehaviour
 
     // Represents the hologram that is currently being gazed at.
     public GameObject FocusedObject { get; private set; }
-
+    public TapToPlace PlacingObject;
     public bool IsNavigating { get; private set; }
     public Vector3 NavigationPosition { get; private set; }
+    public bool placingActive;
 
     private GazeStabilizer gazeStabilizer;
 
@@ -24,7 +25,7 @@ public class GazeGestureManager : MonoBehaviour
     void Start()
     {
         Instance = this;
-
+        placingActive = false;
         // Set up a GestureRecognizer to detect Select gestures.
         recognizer = new GestureRecognizer();
         recognizer.TappedEvent += (source, tapCount, ray) =>
@@ -32,7 +33,13 @@ public class GazeGestureManager : MonoBehaviour
             // Send an OnSelect message to the focused object and its ancestors.
             if (FocusedObject != null)
             {
-                FocusedObject.SendMessageUpwards("OnSelect");
+                if (placingActive)
+                {
+                    PlacingObject.SendMessageUpwards("onFurnitureDrop");
+                } else
+                {
+                    FocusedObject.SendMessageUpwards("OnSelect");
+                }
             }
         };
 

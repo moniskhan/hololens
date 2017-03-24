@@ -36,7 +36,10 @@ public class MenuManager : Singleton<MenuManager> {
             if (Time.time - lastTime < 1)
             {
                 Debug.Log("TappedEvent triggered");
-                ToggleMenu();
+                if(!GazeGestureManager.Instance.placingActive)
+                {
+                    ToggleMenu();
+                }
                 lastTime = 0;
             }
             else
