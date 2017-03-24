@@ -6,8 +6,15 @@ public class AssetLoader : MonoBehaviour {
 
     public GameObject spawner;
 
+    public static AssetLoader Instance { get; private set; }
+
     bool isRemote = false;
     List<GameObject> furntiureInstances = new List<GameObject>();
+
+    public void Start()
+    {
+        Instance = this;
+    }
 
     public void onLoadAssetClick(string bundle, string name)
     {
@@ -39,11 +46,20 @@ public class AssetLoader : MonoBehaviour {
 
     }
 
+    public void ResetAllFocus()
+    {
+        foreach (GameObject f in furntiureInstances)
+        {
+            f.SendMessageUpwards("OnRotateStop");
+        }
+    }
+
     private void loadFromDisk(string bundle, string name)
     {
         Vector3 infront = new Vector3(0.5f, -0.5f, 2.0f);
         Vector3 position = Camera.main.ViewportToWorldPoint(infront);
-        GameObject furniture = spawner.GetComponent<SpawnList>().findAsset(bundle, name);
+        SpawnList spawnlist = spawner.GetComponent<SpawnList>();
+        GameObject furniture = spawnlist.findAsset(bundle, name);
         if (furniture != null)
         {
             GameObject furnitureInstance = Instantiate(furniture, position, Quaternion.identity);
@@ -51,6 +67,8 @@ public class AssetLoader : MonoBehaviour {
             furnitureInstance.AddComponent<TapToPlace>();
             furnitureInstance.SetActive(true);
             furntiureInstances.Add(furnitureInstance);
+            FurnitureMenuItemProperty properties = furnitureInstance.AddComponent<FurnitureMenuItemProperty>();
+            properties.furnitureProperty = spawnlist.findAssetProperties(bundle, name);
         }
     }
 

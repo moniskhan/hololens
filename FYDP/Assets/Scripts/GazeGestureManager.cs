@@ -66,7 +66,7 @@ public class GazeGestureManager : MonoBehaviour
 
         if (FocusedObject != null)
         {
-            FurnitureFactory.Instance.ResetAllFocus();
+            AssetLoader.Instance.ResetAllFocus();
             FocusedObject.SendMessageUpwards("OnRotateStart");
         }
 

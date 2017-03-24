@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnList : MonoBehaviour {
+public class SpawnList : MonoBehaviour
+{
 
     public List<GameObject> chairs;
     public List<GameObject> tables;
@@ -228,7 +229,7 @@ public class SpawnList : MonoBehaviour {
     public static Dictionary<string, FurnitureProperty> LIGHT_DICTIONARY = new Dictionary<string, FurnitureProperty>()
     {
         {  "IkeaAntifoniWorkLamp", new FurnitureProperty { bundle = LIGHT_ASSETS, assetName = "IkeaAntifoniWorkLamp", furnitureType = FurnitureProperty.FurnitureType.GROUND_PLACEABLE, title = "Antifoni Work Lamp", description = "" } },
-        {  "IkeaBasiskPendantLamp", new FurnitureProperty { bundle = LIGHT_ASSETS, assetName = "IkeaBasiskPendantLamp", furnitureType = FurnitureProperty.FurnitureType.GROUND_PLACEABLE, title = "Basisk Pendant Lamp", description = "" } },
+        {  "IkeaBasiskPendantLamp", new FurnitureProperty { bundle = LIGHT_ASSETS, assetName = "IkeaBasiskPendantLamp", furnitureType = FurnitureProperty.FurnitureType.CEILING_PLACEABLE, title = "Basisk Pendant Lamp", description = "" } },
         {  "IkeaBasiskTableLamp", new FurnitureProperty { bundle = LIGHT_ASSETS, assetName = "IkeaBasiskTableLamp", furnitureType = FurnitureProperty.FurnitureType.GROUND_PLACEABLE, title = "Basisk Table Lamp", description = "" } },
         {  "IkeaDipodiFloorLamp", new FurnitureProperty { bundle = LIGHT_ASSETS, assetName = "IkeaDipodiFloorLamp", furnitureType = FurnitureProperty.FurnitureType.GROUND_PLACEABLE, title = "Dipodi Floor Lamp", description = "" } },
         {  "IkeaKrobyLampadaire", new FurnitureProperty { bundle = LIGHT_ASSETS, assetName = "IkeaKrobyLampadaire", furnitureType = FurnitureProperty.FurnitureType.GROUND_PLACEABLE, title = "Kroby Floor Lamp", description = "" } },
@@ -237,7 +238,10 @@ public class SpawnList : MonoBehaviour {
         {  "IkeaKvartLampadaireAvec3Spots", new FurnitureProperty { bundle = LIGHT_ASSETS, assetName = "IkeaKvartLampadaireAvec3Spots", furnitureType = FurnitureProperty.FurnitureType.GROUND_PLACEABLE, title = "Kvart Floor Lamp", description = "" } },
         {  "IkeaMinutLampadaire", new FurnitureProperty { bundle = LIGHT_ASSETS, assetName = "IkeaMinutLampadaire", furnitureType = FurnitureProperty.FurnitureType.GROUND_PLACEABLE, title = "Minut Floor Lamp", description = "" } },
         {  "IkeaNotLampadaire", new FurnitureProperty { bundle = LIGHT_ASSETS, assetName = "IkeaNotLampadaire", furnitureType = FurnitureProperty.FurnitureType.GROUND_PLACEABLE, title = "Not Floor Lamp", description = "" } },
-        {  "IkeaNotLampadaireVariante2", new FurnitureProperty { bundle = LIGHT_ASSETS, assetName = "IkeaNotLampadaireVariante2", furnitureType = FurnitureProperty.FurnitureType.GROUND_PLACEABLE, title = "Not Floor Lamp", description = "" } }
+        {  "IkeaNotLampadaireVariante2", new FurnitureProperty { bundle = LIGHT_ASSETS, assetName = "IkeaNotLampadaireVariante2", furnitureType = FurnitureProperty.FurnitureType.GROUND_PLACEABLE, title = "Not Floor Lamp", description = "" } },
+        {  "IkeaBasiskLightingTrack", new FurnitureProperty { bundle = LIGHT_ASSETS, assetName = "IkeaBasiskLightingTrack", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Not Floor Lamp", description = "" } },
+        {  "IkeaFadoSuspension", new FurnitureProperty { bundle = LIGHT_ASSETS, assetName = "IkeaFadoSuspension", furnitureType = FurnitureProperty.FurnitureType.CEILING_PLACEABLE, title = "Not Floor Lamp", description = "" } },
+        {  "IkeaFlyggeWallSpotlight", new FurnitureProperty { bundle = LIGHT_ASSETS, assetName = "IkeaFlyggeWallSpotlight", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Not Floor Lamp", description = "" } }
     };
 
     public static Dictionary<string, FurnitureProperty> OTHER_DICTIONARY = new Dictionary<string, FurnitureProperty>()

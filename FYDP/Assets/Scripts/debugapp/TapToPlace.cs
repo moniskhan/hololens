@@ -43,12 +43,12 @@ public class TapToPlace : MonoBehaviour
 
     bool isWall()
     {
-        return this.name.Contains("wall");
+        return this.GetComponent<FurnitureMenuItemProperty>().furnitureProperty.furnitureType == FurnitureProperty.FurnitureType.WALL_PLACEABLE;
     }
 
     bool isCeiling()
     {
-        return this.name.Contains("ceiling");
+        return this.GetComponent<FurnitureMenuItemProperty>().furnitureProperty.furnitureType == FurnitureProperty.FurnitureType.CEILING_PLACEABLE;
     }
 
 

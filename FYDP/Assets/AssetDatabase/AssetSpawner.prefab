@@ -134,6 +134,9 @@ MonoBehaviour:
   - {fileID: 1362195351461306, guid: efbd1541513397f48be9a0be291b967b, type: 2}
   - {fileID: 1379390175392724, guid: 4866edb98a4d36a4ea3f5949b9fcd272, type: 2}
   - {fileID: 1125938809901946, guid: 49e2f2ee72e726a48a3ebeebe44c6c43, type: 2}
+  - {fileID: 1141654852845632, guid: be447740d7623e04ba255a90d4406ba0, type: 2}
+  - {fileID: 1045388758817724, guid: acf97b00087c08f49ab62dc8c7e0a739, type: 2}
+  - {fileID: 1386204779935650, guid: c026a5e97f44645419f41795aaf1db46, type: 2}
   beds:
   - {fileID: 1198865825809876, guid: e0f023bc9c3914f4784f53be9068c8ba, type: 2}
   - {fileID: 1098925942620140, guid: db1b8d6c416b22f4f8638d8ad59edc57, type: 2}
@@ -226,6 +229,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 77ad121c201613a4b93b522b119e7ffd, type: 3}
   - {fileID: 21300000, guid: c7f964215a5edae4f9dfaac29be7f56d, type: 3}
   - {fileID: 21300000, guid: 9ff11c38d26918843b1421f47c473233, type: 3}
+  - {fileID: 21300000, guid: 2a3ecc221356997408f254c595124fc2, type: 3}
+  - {fileID: 21300000, guid: d42d6268c833b3d4293eed75658863ad, type: 3}
+  - {fileID: 21300000, guid: b9ae9868baa63cb4faed421e5f20761f, type: 3}
   bedSprites:
   - {fileID: 21300000, guid: b99a437c3e11c4542a5d003c5dbd22dd, type: 3}
   - {fileID: 21300000, guid: 0063ec1c6ebb0d54f97c97405cd1e174, type: 3}

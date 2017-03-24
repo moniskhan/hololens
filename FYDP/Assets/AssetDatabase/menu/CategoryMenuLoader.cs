@@ -54,11 +54,7 @@ public class CategoryMenuLoader : MonoBehaviour
                 furnitureBtn.SetActive(true);
                 GameObject f = furnitures[i];
                 FurnitureProperty properties = spawnList.findAssetProperties(category, f.name);
-                furnitureBtn.GetComponent<FurnitureMenuItemProperty>().furnitureProperty.bundle = properties.bundle;
-                furnitureBtn.GetComponent<FurnitureMenuItemProperty>().furnitureProperty.assetName = properties.assetName;
-                furnitureBtn.GetComponent<FurnitureMenuItemProperty>().furnitureProperty.furnitureType = properties.furnitureType;
-                furnitureBtn.GetComponent<FurnitureMenuItemProperty>().furnitureProperty.title = properties.title;
-                furnitureBtn.GetComponent<FurnitureMenuItemProperty>().furnitureProperty.description = properties.description;
+                furnitureBtn.GetComponent<FurnitureMenuItemProperty>().furnitureProperty = properties;
                 furnitureBtn.GetComponent<FurnitureMenuItemProperty>().index = i;
                 furnitureBtn.GetComponent<Image>().sprite = spawnList.findAssetIcon(category, i);
                 i++;
