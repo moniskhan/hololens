@@ -209,7 +209,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 0}
+      m_Icon: {fileID: 2800000, guid: 792a4815b44a3f04382ed2937828f47f, type: 3}
       m_Width: 128
       m_Height: 128
   m_BuildTargetBatching: []
@@ -449,9 +449,9 @@ PlayerSettings:
   metroCertificateNotAfter: 80cc7e9819d1d201
   metroApplicationDescription: Test
   wsaImages:
-    65636: 
+    65636: Assets/Resources/icon50x50.png
     2031716: 
-  metroTileShortName: Origami
+  metroTileShortName: HomeAR
   metroCommandLineArgsFile: 
   metroTileShowName: 0
   metroMediumTileShowName: 0
