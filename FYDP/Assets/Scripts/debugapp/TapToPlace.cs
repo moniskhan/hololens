@@ -6,8 +6,8 @@ public class TapToPlace : MonoBehaviour
     bool rotating = false;
     float minDepressionAngle = 30;
     float minAscensionAngle = 30;
-    float RotationSensitivity = 1.2f;
-    Quaternion startingRotationAngle;
+    float RotationSensitivity = 120f;
+    Vector3 startingRotationAngle;
 
     void Start()
     {
@@ -34,7 +34,7 @@ public class TapToPlace : MonoBehaviour
     void OnRotateStart()
     {
         MenuManager.Instance.CancelClick();
-        startingRotationAngle = GazeGestureManager.Instance.FocusedObject.transform.parent.rotation;
+        startingRotationAngle = GazeGestureManager.Instance.FocusedObject.transform.parent.transform.localEulerAngles;
         rotating = true;
     }
 
@@ -131,12 +131,10 @@ public class TapToPlace : MonoBehaviour
         }
         if (rotating && GazeGestureManager.Instance.IsNavigating)
         {
-            Quaternion toQuat = GazeGestureManager.Instance.FocusedObject.transform.parent.rotation;
+            Vector3 toQuat = GazeGestureManager.Instance.FocusedObject.transform.parent.transform.localEulerAngles;
             float rotationFactor;
-            rotationFactor = GazeGestureManager.Instance.NavigationPosition.x / RotationSensitivity;
-            toQuat.y = startingRotationAngle.y - 1 * rotationFactor;
-            print(startingRotationAngle.y - 1 * rotationFactor);
-            this.transform.rotation = toQuat;
+            rotationFactor = GazeGestureManager.Instance.NavigationPosition.x * RotationSensitivity;
+            this.transform.rotation = Quaternion.Euler(toQuat.x, startingRotationAngle.y - 1 * rotationFactor, toQuat.z);
         }
     }
 }
