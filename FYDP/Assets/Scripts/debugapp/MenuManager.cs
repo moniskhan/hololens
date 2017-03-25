@@ -11,6 +11,7 @@ public class MenuManager : Singleton<MenuManager> {
     MenuPanel activeMenuType;
 
     public bool isShowing;
+    // public TextToSpeechManager textToSpeechManager = null;
 
     public GameObject mainMenu;
     public GameObject categoryMenu;
@@ -47,6 +48,7 @@ public class MenuManager : Singleton<MenuManager> {
                 lastTime = (float)Time.time;
             }
         };
+        // dictate(isShowing, true);
         positionMenu();
         recognizer.StartCapturingGestures();
 	}
@@ -56,11 +58,41 @@ public class MenuManager : Singleton<MenuManager> {
         isShowing = !isShowing;
         activeMenu.SetActive(isShowing);
         Debug.Log("isShowing " + isShowing);
+
+        // dictate(isShowing, false);
         if (isShowing)
         {
             positionMenu();
         }
     }
+
+    // void dictate(bool isShowing, bool isStart)
+    // {
+    //     string msg1 = "Move your head to control the cursor with your gaze... Make a selection by air tapping.";
+    //     string msg2 = "Open the catalog menu again anytime by double tapping again.";
+
+    //     // in MenuManager ToggleMenu
+    //     textToSpeechManager = Camera.main.GetComponentInChildren<TextToSpeechManager>();
+
+    //     if (textToSpeechManager != null && !textToSpeechManager.IsSpeaking())
+    //     {
+    //         Debug.Log("Dictating Instructions");
+    //         if (isShowing)
+    //         {
+    //             textToSpeechManager.SpeakText(msg1);
+    //         } else if (!isShowing)
+    //         {
+    //             textToSpeechManager.SpeakText(msg2);
+    //         }
+            
+    //     }
+    //     else if (textToSpeechManager != null && textToSpeechManager.IsSpeaking())
+    //     {
+    //         textToSpeechManager.StopSpeaking();
+    //     } else if (isStart) {
+    //         Debug.Log("Trying to dictate on start.");
+    //     }
+    // }
 
     void positionMenu()
     {
