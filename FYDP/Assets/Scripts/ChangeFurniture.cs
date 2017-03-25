@@ -66,8 +66,8 @@ public class ChangeFurniture : MonoBehaviour {
                 otherNames.Add(entry.Key);
             }
             furnitureNames.Add("chairassets", chairNames);
-            furnitureNames.Add("drawerassets", tableNames);
-            furnitureNames.Add("tableassets", drawerNames);
+            furnitureNames.Add("drawerassets", drawerNames);
+            furnitureNames.Add("tableassets", tableNames);
             furnitureNames.Add("sofaassets", sofaNames);
             furnitureNames.Add("bedassets", bedNames);
             furnitureNames.Add("storageassets", storageNames);
