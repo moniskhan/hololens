@@ -1,8 +1,8 @@
 <?php
 $servername = "tommy.heliohost.org";
-$username = "monisk_admin";
-$password = "^2uAP8MDHq0@";
-$dbname = "monisk_fydp";
+$username = "user";
+$password = "pass";
+$dbname = "db";
 $conn = new mysqli($servername, $username, $password, $dbname);
 if (!$conn) {
 
