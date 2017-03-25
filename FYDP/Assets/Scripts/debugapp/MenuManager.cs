@@ -149,6 +149,11 @@ public class MenuManager : Singleton<MenuManager> {
     public void SwitchBackToCategoryMenu()
     {
         SwitchToCategoryMenu(prevCategory);
+        textToSpeechManager = Camera.main.GetComponentInChildren<TextToSpeechManager>();
+        if (textToSpeechManager != null && textToSpeechManager.IsSpeaking())
+        {
+            textToSpeechManager.StopSpeaking();
+        }
     }
 
     public void SwitchToDetailsMenu()
