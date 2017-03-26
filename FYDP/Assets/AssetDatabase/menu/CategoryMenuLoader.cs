@@ -44,19 +44,25 @@ public class CategoryMenuLoader : MonoBehaviour
 
         int i = currentIndex * pageSize;
 
-        Debug.Log("category: " + category + " currentIndex: " + currentIndex + " i: " + i);
-
         foreach (GameObject furnitureBtn in furniturePage)
         {
             if (i < Math.Min(furnitures.Count, (currentIndex + 1) * pageSize))
             {
                 furnitureBtn.SetActive(true);
                 GameObject f = furnitures[i];
-                Debug.Log("category " + category + " name " + f.name);
                 FurnitureProperty properties = spawnList.findAssetProperties(category, f.name);
                 furnitureBtn.GetComponent<FurnitureMenuItemProperty>().furnitureProperty = properties;
                 furnitureBtn.GetComponent<FurnitureMenuItemProperty>().index = i;
-                furnitureBtn.GetComponent<Image>().sprite = spawnList.findAssetIcon(category, i);
+                if (!category.Contains("paint"))
+                {
+                    furnitureBtn.GetComponent<Image>().sprite = spawnList.findAssetIcon(category, i);
+                    furnitureBtn.GetComponent<Image>().material = null;
+                }
+                else
+                {
+                    furnitureBtn.GetComponent<Image>().sprite = null;
+                    furnitureBtn.GetComponent<Image>().material = spawnList.findPaintIcon(i);
+                }
                 i++;
             }
             else

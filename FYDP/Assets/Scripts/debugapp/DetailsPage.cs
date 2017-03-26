@@ -18,7 +18,16 @@ public class DetailsPage : MonoBehaviour {
         okBtn.GetComponent<FurnitureMenuItemProperty>().furnitureProperty = item.furnitureProperty;
         title.GetComponent<Text>().text = item.furnitureProperty.title;
         description.GetComponent<Text>().text = item.furnitureProperty.description;
-        picture.GetComponent<Image>().sprite = spawner.GetComponent<SpawnList>().findAssetIcon(item.furnitureProperty.bundle, item.index);
+        if (!item.furnitureProperty.bundle.Contains("paint"))
+        {
+            picture.GetComponent<Image>().sprite = spawner.GetComponent<SpawnList>().findAssetIcon(item.furnitureProperty.bundle, item.index);
+            picture.GetComponent<Image>().material = null;
+        }
+        else
+        {
+            picture.GetComponent<Image>().material = spawner.GetComponent<SpawnList>().findPaintIcon(item.index);
+            picture.GetComponent<Image>().sprite = null;
+        }
         dictate();
     }
 

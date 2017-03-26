@@ -13,6 +13,7 @@ public class SpawnList : MonoBehaviour
     public List<GameObject> lights;
     public List<GameObject> beds;
     public List<GameObject> others;
+    public List<GameObject> paints;
 
     public List<Sprite> chairSprites;
     public List<Sprite> tableSprites;
@@ -22,6 +23,7 @@ public class SpawnList : MonoBehaviour
     public List<Sprite> lightSpritess;
     public List<Sprite> bedSprites;
     public List<Sprite> otherSprites;
+    public List<Material> paintSprites;
 
     private static string CHAIR_ASSETS = "chairassets";
     private static string DRAWER_ASSETS = "drawerassets";
@@ -31,6 +33,7 @@ public class SpawnList : MonoBehaviour
     private static string STORGE_ASSETS = "storageassets";
     private static string LIGHT_ASSETS = "lightassets";
     private static string OTHER_ASSETS = "otherassets";
+    private static string PAINTS_ASSETS = "paintsassets";
 
     private static string CHAIR_CATEGORY_TITLE = "Chairs";
     private static string DRAWER_CATEGORY_TITLE = "Drawers";
@@ -40,6 +43,7 @@ public class SpawnList : MonoBehaviour
     private static string STORAGE_CATEGORY_TITLE = "Storage";
     private static string LIGHT_CATEGORY_TITLE = "Lights";
     private static string OTHER_CATEGORY_TITLE = "Others";
+    private static string PAINTS_CATEGORY_TITLE = "Paints";
 
 
     public GameObject findAsset(string bundle, string asset)
@@ -78,6 +82,11 @@ public class SpawnList : MonoBehaviour
             return new List<Sprite>();
     }
 
+    public Material findPaintIcon(int index)
+    {
+        return paintSprites[index];
+    }
+
 
     public string getCategoryTitle(string bundle)
     {
@@ -97,6 +106,8 @@ public class SpawnList : MonoBehaviour
             return LIGHT_CATEGORY_TITLE;
         else if (bundle.Equals(OTHER_ASSETS))
             return OTHER_CATEGORY_TITLE;
+        else if (bundle.Equals(PAINTS_ASSETS))
+            return PAINTS_CATEGORY_TITLE;
         return "";
     }
 
@@ -123,12 +134,15 @@ public class SpawnList : MonoBehaviour
             return lights;
         else if (bundle.Equals(OTHER_ASSETS))
             return others;
+        else if (bundle.Equals(PAINTS_ASSETS))
+            return paints;
         else
             return new List<GameObject>();
     }
 
     public FurnitureProperty findAssetProperties(string bundle, string asset)
     {
+        Debug.Log("Bundle " + bundle + " asset " + asset);
         return FURNITURE_DICTIONARY[bundle][asset];
     }
 
@@ -250,8 +264,69 @@ public class SpawnList : MonoBehaviour
         {  "microwave", new FurnitureProperty { bundle = OTHER_ASSETS, assetName = "microwave", furnitureType = FurnitureProperty.FurnitureType.GROUND_PLACEABLE } },
         {  "PolantisOven03", new FurnitureProperty { bundle = OTHER_ASSETS, assetName = "PolantisOven03", furnitureType = FurnitureProperty.FurnitureType.GROUND_PLACEABLE, title = "Oven", description = "A simple kitchen oven" } },
         {  "PictureFrame", new FurnitureProperty { bundle = OTHER_ASSETS, assetName = "PictureFrame", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Picture Frame", description = "A Simple picture frame" } }
+    };
+
+
+    public static Dictionary<string, FurnitureProperty> PAINTS_DICTIONARY = new Dictionary<string, FurnitureProperty>()
+    {
+        {  "red0", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "red0", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Very berry", description = "" } },
+        {  "red1", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "red1", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Kissable Pink", description = "" } },
+        {  "red2", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "red2", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Cherries Jubilee", description = "" } },
+        {  "red3", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "red3", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Candy Apple", description = "" } },
+        {  "red4", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "red4", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Red Geranium", description = "" } },
+        {  "red5", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "red5", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Raspberry Pink", description = "" } },
+
+        {  "orange0", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "orange0", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Orange Tiger Lily", description = "" } },
+        {  "orange1", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "orange1", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Fresh Tangerines", description = "" } },
+        {  "orange2", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "orange2", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Pumpkin Patch", description = "" } },
+        {  "orange3", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "orange3", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Jack O Lamtern", description = "" } },
+        {  "orange4", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "orange4", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Carotene", description = "" } },
+        {  "orange5", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "orange5", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Tropical Coral", description = "" } },
+
+        {  "yellow0", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "yellow0", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Sun Rays", description = "" } },
+        {  "yellow1", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "yellow1", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Warm Gold", description = "" } },
+        {  "yellow2", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "yellow2", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Wheat Stalk", description = "" } },
+        {  "yellow3", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "yellow3", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Sunshower", description = "" } },
+        {  "yellow4", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "yellow4", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Extra Virgin Olive Oil", description = "" } },
+        {  "yellow5", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "yellow5", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Sunbeam", description = "" } },
+
+        {  "green0", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "green0", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Freshen Up Lime", description = "" } },
+        {  "green1", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "green1", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Granny Smith Apple", description = "" } },
+        {  "green2", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "green2", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Spring Green", description = "" } },
+        {  "green3", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "green3", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Jungle Vine", description = "" } },
+        {  "green4", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "green4", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Frendale", description = "" } },
+        {  "green5", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "green5", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Lemon Lime Fizz", description = "" } },
+
+        {  "blue0", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "blue0", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Bright Teal Surprise", description = "" } },
+        {  "blue1", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "blue1", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Marine Blue", description = "" } },
+        {  "blue2", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "blue2", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Hawaiian Teal", description = "" } },
+        {  "blue3", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "blue3", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Caribbean Sea", description = "" } },
+        {  "blue4", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "blue4", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Clipper Ship Blue", description = "" } },
+        {  "blue5", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "blue5", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Thai Teal", description = "" } },
+
+        {  "violet0", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "violet0", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Bright Sailing Sky", description = "" } },
+        {  "violet1", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "violet1", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Bright Cornflower Blue", description = "" } },
+        {  "violet2", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "violet2", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Pure Periwinkle", description = "" } },
+        {  "violet3", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "violet3", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Dusty Violet", description = "" } },
+        {  "violet4", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "violet4", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Regal Purple", description = "" } },
+        {  "violet5", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "violet5", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Blue Marina", description = "" } },
+
+        {  "grey0", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "grey0", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Aged Stucco Grey", description = "" } },
+        {  "grey1", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "grey1", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Distant Haze Green", description = "" } },
+        {  "grey2", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "grey2", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Shaded Brook", description = "" } },
+        {  "grey3", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "grey3", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Ascot Blue", description = "" } },
+        {  "grey4", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "grey4", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Old Monterey Grey", description = "" } },
+        {  "grey5", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "grey5", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Polished Limestone", description = "" } },
+
+        {  "brown0", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "brown0", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Council Bluff Tan", description = "" } },
+        {  "brown1", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "brown1", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Antique Bisque", description = "" } },
+        {  "brown2", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "brown2", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Dry Goods Neutural", description = "" } },
+        {  "brown3", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "brown3", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Jefferson House Tan", description = "" } },
+        {  "brown4", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "brown4", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Grey Birch", description = "" } },
+        {  "brown5", new FurnitureProperty { bundle = PAINTS_ASSETS, assetName = "brown5", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Pink Beige", description = "" } }
 
     };
+
 
     public static Dictionary<string, Dictionary<string, FurnitureProperty>> FURNITURE_DICTIONARY = new Dictionary<string, Dictionary<string, FurnitureProperty>>()
     {
@@ -263,6 +338,7 @@ public class SpawnList : MonoBehaviour
         { STORGE_ASSETS, STORAGE_DICTIONARY },
         { LIGHT_ASSETS, LIGHT_DICTIONARY},
         { OTHER_ASSETS, OTHER_DICTIONARY},
+        { PAINTS_ASSETS, PAINTS_DICTIONARY},
     };
 
 }
