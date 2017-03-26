@@ -41,6 +41,8 @@ public class MenuManager : Singleton<MenuManager> {
                 if(!GazeGestureManager.Instance.placingActive && (GazeGestureManager.Instance.FocusedObject == null || GazeGestureManager.Instance.FocusedObject.layer == spatialLayer))
                 {
                     ToggleMenu();
+                    if(!isShowing)
+                        ToggleMenu();
                     print(GazeGestureManager.Instance.FocusedObject);
                 }
                 lastTime = 0;
