@@ -131,10 +131,9 @@ public class TapToPlace : MonoBehaviour
         }
         if (rotating && GazeGestureManager.Instance.IsNavigating)
         {
-            Vector3 toQuat = GazeGestureManager.Instance.FocusedObject.transform.parent.transform.localEulerAngles;
             float rotationFactor;
             rotationFactor = GazeGestureManager.Instance.NavigationPosition.x * RotationSensitivity;
-            this.transform.rotation = Quaternion.Euler(toQuat.x, startingRotationAngle.y - 1 * rotationFactor, toQuat.z);
+            this.transform.rotation = Quaternion.Euler(startingRotationAngle.x, startingRotationAngle.y - 1 * rotationFactor, startingRotationAngle.z);
         }
     }
 }
