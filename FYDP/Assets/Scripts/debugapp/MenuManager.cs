@@ -10,6 +10,7 @@ public class MenuManager : Singleton<MenuManager> {
     public enum MenuPanel { Main=0, Category=1, Details=2 }
     MenuPanel activeMenuType;
 
+    public static int spatialLayer = 31;
     public bool isShowing;
     public TextToSpeechManager textToSpeechManager = null;
 
@@ -37,9 +38,10 @@ public class MenuManager : Singleton<MenuManager> {
             if (Time.time - lastTime < 1)
             {
                 Debug.Log("TappedEvent triggered");
-                if(!GazeGestureManager.Instance.placingActive)
+                if(!GazeGestureManager.Instance.placingActive && (GazeGestureManager.Instance.FocusedObject == null || GazeGestureManager.Instance.FocusedObject.layer == spatialLayer))
                 {
                     ToggleMenu();
+                    print(GazeGestureManager.Instance.FocusedObject);
                 }
                 lastTime = 0;
             }
