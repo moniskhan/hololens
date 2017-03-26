@@ -32,6 +32,7 @@ public class ChangeFurniture : MonoBehaviour {
             List<string> lightNames = new List<string>();
             List<string> bedNames = new List<string>();
             List<string> otherNames = new List<string>();
+            List<string> paintNames = new List<string>();
 
             foreach (KeyValuePair<string, FurnitureProperty> entry in SpawnList.CHAIR_DICTIONARY)
             {
@@ -65,6 +66,10 @@ public class ChangeFurniture : MonoBehaviour {
             {
                 otherNames.Add(entry.Key);
             }
+            foreach (KeyValuePair<string, FurnitureProperty> entry in SpawnList.PAINTS_DICTIONARY)
+            {
+                paintNames.Add(entry.Key);
+            }
             furnitureNames.Add("chairassets", chairNames);
             furnitureNames.Add("drawerassets", drawerNames);
             furnitureNames.Add("tableassets", tableNames);
@@ -73,6 +78,7 @@ public class ChangeFurniture : MonoBehaviour {
             furnitureNames.Add("storageassets", storageNames);
             furnitureNames.Add("lightassets", lightNames);
             furnitureNames.Add("otherassets", otherNames);
+            furnitureNames.Add("paintsassets", paintNames);
         }
     }
 
