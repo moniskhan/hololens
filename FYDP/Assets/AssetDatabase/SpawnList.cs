@@ -142,7 +142,6 @@ public class SpawnList : MonoBehaviour
 
     public FurnitureProperty findAssetProperties(string bundle, string asset)
     {
-        Debug.Log("Bundle " + bundle + " asset " + asset);
         return FURNITURE_DICTIONARY[bundle][asset];
     }
 
