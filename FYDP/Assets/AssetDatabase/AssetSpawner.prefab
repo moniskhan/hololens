@@ -122,6 +122,10 @@ MonoBehaviour:
   - {fileID: 1051990614469516, guid: a279fdeed06c9e044a3f56e4e64c395a, type: 2}
   - {fileID: 1681385061548572, guid: 0844e53aecd35cd46bc5a73a749b4443, type: 2}
   - {fileID: 1414485240044390, guid: 1e389d959a4d5ca4b84acb567dfbb33c, type: 2}
+  - {fileID: 1131201629679418, guid: baa0f3861a542f0478f7117da6f43df1, type: 2}
+  - {fileID: 1673854243873164, guid: 9928a39ebb65aec43b46e3d5f9a94e76, type: 2}
+  - {fileID: 1943087968713776, guid: 759bc3626bb620b4881f49eeebfe9608, type: 2}
+  - {fileID: 1123336072828168, guid: 14c821bb128b3274db428aaf5405cbb5, type: 2}
   lights:
   - {fileID: 1695431570132028, guid: 6e212503fad70ae42ae7d2bc4df58384, type: 2}
   - {fileID: 1139137098491518, guid: e5d4a50dbbf59854cae3b228bc9c520d, type: 2}
@@ -144,8 +148,8 @@ MonoBehaviour:
   - {fileID: 1181435994112634, guid: 13bde1b476a188f4f9345840eff86e99, type: 2}
   others:
   - {fileID: 1226837927632746, guid: 0c051be6c5578d04aaf534de5a2752e6, type: 2}
-  - {fileID: 1941912488559870, guid: 6e34f916e4fba91418450b1c0e478951, type: 2}
-  - {fileID: 100000, guid: 2d068f3ed2f488a4aa7565ef97efeba9, type: 3}
+  - {fileID: 1487213051517568, guid: 40cb2b1e5af6847479ac0c2f79f1c4f4, type: 2}
+  - {fileID: 1643753876940842, guid: ee2e18da4b5081340adae0fbef70f135, type: 2}
   chairSprites:
   - {fileID: 21300000, guid: d9d79f18dc520ac4381904477a9ed402, type: 3}
   - {fileID: 21300000, guid: 49a5edc4bb45e8b439ab7a345024e70a, type: 3}
@@ -217,6 +221,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: aa485a7c5c5cd224bb564a56441e091b, type: 3}
   - {fileID: 21300000, guid: ac8f8937a48a33c47bb3f7c8b8c5677d, type: 3}
   - {fileID: 21300000, guid: fea04534df07349438416c01fa047d77, type: 3}
+  - {fileID: 21300000, guid: 4f6f542a13d58004ca318f4b52e8e625, type: 3}
+  - {fileID: 21300000, guid: 8242a6f1d86a43f46a628c6a52f51e6e, type: 3}
+  - {fileID: 21300000, guid: a909337fa41c66947b71105ebffdd67e, type: 3}
+  - {fileID: 21300000, guid: 9c173ead7dc9c5045a8d4daa775daf2d, type: 3}
   lightSpritess:
   - {fileID: 21300000, guid: 143e2a9344e27c84fb94b621bbde2f76, type: 3}
   - {fileID: 21300000, guid: 289bea2f034150447bfcf82e15980c2b, type: 3}
@@ -239,5 +247,5 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 874e9c5af1a940f4ebb4ae0c18d338c0, type: 3}
   otherSprites:
   - {fileID: 21300000, guid: 7b1251683833ba147aab5e8b64684133, type: 3}
-  - {fileID: 21300000, guid: 183b42b2e9bc819438275643257938cc, type: 3}
+  - {fileID: 21300000, guid: d14e1b09c82d11246ae47c092c46a943, type: 3}
   - {fileID: 21300000, guid: 240d6a58346ac7442a8a356cd7071b74, type: 3}

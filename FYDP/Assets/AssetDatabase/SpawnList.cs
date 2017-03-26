@@ -246,9 +246,11 @@ public class SpawnList : MonoBehaviour
 
     public static Dictionary<string, FurnitureProperty> OTHER_DICTIONARY = new Dictionary<string, FurnitureProperty>()
     {
-        {  "sink", new FurnitureProperty { bundle = OTHER_ASSETS, assetName = "sink", furnitureType = FurnitureProperty.FurnitureType.GROUND_PLACEABLE } },
+        {  "PolantisBassin", new FurnitureProperty { bundle = OTHER_ASSETS, assetName = "PolantisBassin", furnitureType = FurnitureProperty.FurnitureType.GROUND_PLACEABLE, title = "Bathroom Bassin", description = "A simple Bathroom Bassian" } },
         {  "microwave", new FurnitureProperty { bundle = OTHER_ASSETS, assetName = "microwave", furnitureType = FurnitureProperty.FurnitureType.GROUND_PLACEABLE } },
-        {  "oven03", new FurnitureProperty { bundle = OTHER_ASSETS, assetName = "oven03", furnitureType = FurnitureProperty.FurnitureType.GROUND_PLACEABLE } }
+        {  "PolantisOven03", new FurnitureProperty { bundle = OTHER_ASSETS, assetName = "PolantisOven03", furnitureType = FurnitureProperty.FurnitureType.GROUND_PLACEABLE, title = "Oven", description = "A simple kitchen oven" } },
+        {  "PictureFrame", new FurnitureProperty { bundle = OTHER_ASSETS, assetName = "PictureFrame", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Picture Frame", description = "A Simple picture frame" } }
+
     };
 
     public static Dictionary<string, Dictionary<string, FurnitureProperty>> FURNITURE_DICTIONARY = new Dictionary<string, Dictionary<string, FurnitureProperty>>()

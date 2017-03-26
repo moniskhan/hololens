@@ -50,9 +50,9 @@ public class CategoryMenuLoader : MonoBehaviour
         {
             if (i < Math.Min(furnitures.Count, (currentIndex + 1) * pageSize))
             {
-                Debug.Log("at i: " + i);
                 furnitureBtn.SetActive(true);
                 GameObject f = furnitures[i];
+                Debug.Log("category " + category + " name " + f.name);
                 FurnitureProperty properties = spawnList.findAssetProperties(category, f.name);
                 furnitureBtn.GetComponent<FurnitureMenuItemProperty>().furnitureProperty = properties;
                 furnitureBtn.GetComponent<FurnitureMenuItemProperty>().index = i;
