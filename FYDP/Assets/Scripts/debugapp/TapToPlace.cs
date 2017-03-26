@@ -6,7 +6,7 @@ public class TapToPlace : MonoBehaviour
     bool rotating = false;
     float minDepressionAngle = 30;
     float minAscensionAngle = 30;
-    float RotationSensitivity = 120f;
+    float RotationSensitivity = 180f;
     Vector3 startingRotationAngle;
 
     void Start()
