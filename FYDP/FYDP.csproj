@@ -82,6 +82,7 @@
     <Compile Include="Assets\AssetDatabase\menu\CategoryMenuLoader.cs" />
     <Compile Include="Assets\AssetDatabase\menu\FurnitureMenuItemProperty.cs" />
     <Compile Include="Assets\AssetDatabase\menu\FurnitureProperty.cs" />
+    <Compile Include="Assets\HoloToolkit\Input\Scripts\Voice\KeywordManager.cs" />
     <Compile Include="Assets\HoloToolkit\Utilities\Scripts\TextToSpeechManager.cs" />
     <Compile Include="Assets\Holograms\Support\AniCrane\AnimationSpeed.cs" />
     <Compile Include="Assets\Holograms\Support\Fitbox\Fitbox.cs" />
