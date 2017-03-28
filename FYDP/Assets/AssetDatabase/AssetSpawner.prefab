@@ -148,7 +148,6 @@ MonoBehaviour:
   - {fileID: 1181435994112634, guid: 13bde1b476a188f4f9345840eff86e99, type: 2}
   others:
   - {fileID: 1226837927632746, guid: 0c051be6c5578d04aaf534de5a2752e6, type: 2}
-  - {fileID: 1487213051517568, guid: 40cb2b1e5af6847479ac0c2f79f1c4f4, type: 2}
   - {fileID: 1643753876940842, guid: ee2e18da4b5081340adae0fbef70f135, type: 2}
   paints:
   - {fileID: 1882011576852306, guid: 32ab702e717fe5f40ace28abb7977bf4, type: 2}
@@ -296,7 +295,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 874e9c5af1a940f4ebb4ae0c18d338c0, type: 3}
   otherSprites:
   - {fileID: 21300000, guid: 7b1251683833ba147aab5e8b64684133, type: 3}
-  - {fileID: 21300000, guid: d14e1b09c82d11246ae47c092c46a943, type: 3}
   - {fileID: 21300000, guid: 240d6a58346ac7442a8a356cd7071b74, type: 3}
   paintSprites:
   - {fileID: 2100000, guid: d3a537427772f3e45a5dafcb8397adbf, type: 2}

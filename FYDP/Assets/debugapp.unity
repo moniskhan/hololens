@@ -1294,7 +1294,8 @@ Prefab:
         type: 2}
       propertyPath: others.Array.data[1]
       value: 
-      objectReference: {fileID: 100000, guid: 3392c82cfabcd6143a0391ac7072f50d, type: 3}
+      objectReference: {fileID: 1643753876940842, guid: ee2e18da4b5081340adae0fbef70f135,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 446f5a9fcddb4324099311f30674a60b, type: 2}
   m_IsPrefabParent: 0
