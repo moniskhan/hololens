@@ -75,6 +75,13 @@ public class AssetLoader : MonoBehaviour {
         }
         if (furniture != null)
         {
+            FurnitureProperty furnitureProperty = spawnlist.findAssetProperties(bundle, name);
+
+            if (furnitureProperty.furnitureType == FurnitureProperty.FurnitureType.CEILING_PLACEABLE)
+            {
+                position = new Vector3(position.x, position.y + 1.0f, position.z);
+            }
+
             GameObject furnitureInstance = Instantiate(furniture, position, angle);
             //furnitureInstance.AddComponent<TapToPlaceParent>();
             furnitureInstance.AddComponent<TapToPlace>();
@@ -82,7 +89,7 @@ public class AssetLoader : MonoBehaviour {
             furnitureInstance.SetActive(true);
             furntiureInstances.Add(furnitureInstance);
             FurnitureMenuItemProperty properties = furnitureInstance.AddComponent<FurnitureMenuItemProperty>();
-            properties.furnitureProperty = spawnlist.findAssetProperties(bundle, name);
+            properties.furnitureProperty = furnitureProperty;
         }
     }
 
